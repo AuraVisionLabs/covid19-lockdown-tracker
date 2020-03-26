@@ -1,4 +1,21 @@
 Country,Place,Start date,End date,Level,Confirmed
+China,Wuhan,2020-01-23,2020-04-08,Sub-provincial,Confirmed
+China,Xiaogan,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Huanggang,2020-01-23,2020-03-25,Prefectural,Confirmed
+China,Jingzhou,2020-01-24,2020-03-17,Prefectural,Confirmed
+China,Ezhou,2020-01-23,2020-03-25,Prefectural,Confirmed
+China,Suizhou,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Xiangyang,2020-01-28,2020-03-25,Prefectural,Confirmed
+China,Huangshi,2020-01-24,2020-03-13,Prefectural,Confirmed
+China,Yichang,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Jingmen,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Xianning,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Shiyan,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Xiantao,2020-01-24,2020-03-25,Sub-prefectural,Confirmed
+China,Tianmen,2020-01-24,2020-03-25,Sub-prefectural,Confirmed
+China,Enshi,2020-01-24,2020-03-25,Prefectural,Confirmed
+China,Qianjiang,2020-01-24,2020-03-13,Sub-prefectural,Confirmed
+China,Shennongjia,2020-01-27,2020-03-25,Sub-prefectural,Confirmed
 Argentina,,2020-03-19,2020-03-31,National,
 Australia,,2020-03-23,,National,
 Austria,,2020-03-16,2020-04-13,National,
@@ -22,7 +39,7 @@ Italy,,2020-03-09,2020-04-03,National,
 Lebanon,,2020-03-15,2020-03-29,National,
 Lithuania,,2020-03-16,2020-04-13,National,
 Malaysia,,2020-03-18,2020-04-14,National,
-Morocco,,2020-03-19,,National,
+Morocco,,2020-03-19,2020-04-20,National,
 Nepal,,2020-03-24,2020-03-30,National,
 New Zealand,,2020-03-26,,National,
 Norway,,2020-03-12,2020-04-13,National,
@@ -37,6 +54,7 @@ Philippines,Soccsksargen,2020-03-23,,Region,
 Poland,,2020-03-13,,National,
 Portugal,,2020-03-19,2020-04-02,National,
 Romania,,2020-03-25,,National,
+Samoa,,2020-03-26,2020-04-09,National,
 South Africa,,2020-03-26,2020-04-16,National,
 Spain,,2020-03-14,2020-04-11,National,
 Tunisia,,2020-03-22,,National,
@@ -52,20 +70,3 @@ United States,New York,2020-03-20,2020-03-29,State,
 United States,Oregon,2020-03-24,,State,
 United States,Wisconsin,2020-03-24,2020-04-24,State,
 Venezuela,,2020-03-17,,National,
-China,Wuhan,2020-01-23,2020-04-08,Sub-provincial,Confirmed
-China,Xiaogan,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Huanggang,2020-01-23,2020-03-25,Prefectural,Confirmed
-China,Jingzhou,2020-01-24,2020-03-17,Prefectural,Confirmed
-China,Ezhou,2020-01-23,2020-03-25,Prefectural,Confirmed
-China,Suizhou,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Xiangyang,2020-01-28,2020-03-25,Prefectural,Confirmed
-China,Huangshi,2020-01-24,2020-03-13,Prefectural,Confirmed
-China,Yichang,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Jingmen,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Xianning,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Shiyan,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Xiantao,2020-01-24,2020-03-25,Sub-prefectural,Confirmed
-China,Tianmen,2020-01-24,2020-03-25,Sub-prefectural,Confirmed
-China,Enshi,2020-01-24,2020-03-25,Prefectural,Confirmed
-China,Qianjiang,2020-01-24,2020-03-13,Sub-prefectural,Confirmed
-China,Shennongjia,2020-01-27,2020-03-25,Sub-prefectural,Confirmed

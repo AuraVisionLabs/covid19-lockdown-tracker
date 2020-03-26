@@ -8,6 +8,7 @@ from dash.dependencies import Input, Output, State
 import pandas as pd
 import pycountry
 import flag
+
 pd.set_option('display.max_columns', 500)
 from datetime import datetime as dt
 import numpy as np
@@ -56,172 +57,170 @@ df_quar['CC'] = df_quar['Country'].apply(lambda x: pycountry.countries.search_fu
 df_quar['CCE'] = df_quar['CC'].apply(lambda x: flag.flag(x))
 print(df_quar.head())
 
-average_confirmed_days = df_quar[df_quar['Confirmed'] == 'Confirmed']['Duration'].mean()
-max_confirmed_days = df_quar[df_quar['Confirmed'] == 'Confirmed']['Duration'].max()
-
-df_quar_wuh = df_quar[df_quar['Place'] == 'Wuhan']
-
+average_confirmed_days = df_quar[df_quar['Confirmed'] == 'Confirmed']['Duration'].mean().days
+max_confirmed_days = df_quar[df_quar['Confirmed'] == 'Confirmed']['Duration'].max().days
+df_quar_wuh = df_quar[df_quar['Place'] == 'Wuhan'].iloc[0]
+x_points = [df_quar_wuh['Start'], df_quar_wuh['Start'] + pd.offsets.Day(21), df_quar_wuh['Start'] + pd.offsets.Day(42),
+            df_quar_wuh['Start'] + pd.offsets.Day(average_confirmed_days),
+            df_quar_wuh['Start'] + pd.offsets.Day(max_confirmed_days)]
+x_text = ['Lockdown started️', 'Lockdown review date', 'Lockdown ended',
+          '️%d Days<br>Average duration' % (average_confirmed_days),
+          '%d Days<br>Maximum duration' % (max_confirmed_days)]
+x_color = ['rgb(255,0,90)', 'rgb(255,165,0)', 'rgb(0,255,165)', 'rgb(173,173,173)', 'rgb(0,0,0)']
+print(x_points)
 line_height = 30
-# print(df_quar['Task'].unique())
-#
-# df_quar_lim = df_quar[df_quar['Country'].isin(['China', 'United Kingdom', 'France', 'Italy', 'Spain', 'United States', 'Iran', ])]
-#
-# df_gantt_ls = []
-#
-# colors = {}
-# for i in range(256):
-#     colors[str(i) + 'r'] = matplotlib.cm.get_cmap('Reds')(i / 255)
-#     colors[str(i) + 'b'] = matplotlib.cm.get_cmap('Greens')(i / 255)
-#
-# for col_name in ['China - Hubei', 'United Kingdom - ', 'France - ', 'Italy - ', 'Iran - ', 'Spain - ']:
-#     print(col_name)
-#     for n in range(int((df_quar['Finish'].max() - df_deaths_pd.index.min()).days)):
-#         date_select = df_deaths_pd.index.min() + pd.offsets.Day(n)
-#         in_quarantine = False
-#         if col_name in df_quar['Task'].unique():
-#             df_quar_select = df_quar[df_quar['Task'] == col_name].iloc[0]
-#             if (date_select >= df_quar_select['Start']) and (date_select <= df_quar_select['Finish']):
-#                 in_quarantine = True
-#         if date_select in df_deaths_pd.index:
-#             val = df_deaths_pd.loc[date_select, col_name]
-#             print(val, np.isnan(val))
-#             if not np.isnan(val):
-#                 if in_quarantine:
-#                     col = str(int((val/3/793*255).round()+10)) + 'b'
-#                 else:
-#                     col = str(int((val / 3 /793 * 255).round()+10)) + 'r'
-#                 df_gantt_ls.append(
-#                     {'Task': col_name, 'Start': date_select, 'Finish': date_select + pd.offsets.Day(1), 'Deaths': col})
-#         else:
-#             if in_quarantine:
-#                 col = '50b'
-#                 df_gantt_ls.append(
-#                         {'Task': col_name, 'Start': date_select, 'Finish': date_select + pd.offsets.Day(1), 'Deaths': col})
-#
-# df_gantt = pd.DataFrame(df_gantt_ls)
-# # df_gantt['Deaths'] = (df_gantt['Deaths'].fillna(0) / 242 * 255).round()
-# # print(df_gantt)
-# gantt = ff.create_gantt(df_gantt, index_col='Deaths', colors=colors, group_tasks=True, show_colorbar=True)
+info_height = line_height * (len(df_quar) + 4)
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(children=[
-dcc.Graph(
-        figure={
-            'data': [
-                        go.Scatter(
-                            x=[pd.datetime.now().date(), pd.datetime.now().date()],
-                            y=[0, len(df_quar) * line_height],
-                            mode='lines',
-                            name='Today',
-                            line={
-                                'width': 2,
-                                'color': 'rgb(0,0,0)'
-                            }
-                        )
-                    ] + [
-                        go.Scatter(
-                            x=[row['Start'], row['PEnd']],
-                            y=[index * line_height, index * line_height],
-                            mode='lines',
-                            name=row['Name'],
-                            line={
-                                'width': 2,
-                                'color': 'rgb(128,128,128)',
-                                'dash': 'dash'
-                            }
-                        ) for index, row in df_quar.iterrows()
-                    ] + [
-                        go.Scatter(
-                            x=[row['Start'], row['Finish']],
-                            y=[index * line_height, index * line_height],
-                            mode='lines',
-                            name=row['Name'],
-                            line={
-                                'width': 4 if row['Level'] == 'National' else 2,
-                                'color': 'rgb(0,255,0)' if row['Status'] == 'Ended' else 'rgb(255,0,0)'
-                            }
-                        ) for index, row in df_quar.dropna(subset=['Finish']).iterrows()
-                    ],
-            'layout': {
-                'height': 1200,
-                'margin': {'l': 40, 'b': 30, 't': 0, 'r': 10},
-                'annotations': [],
-                'xaxis': {
-                    'showline': False,
-                    'zeroline': False,
-                    'tickformat': '%B \'%y',
-                    # 'tickvals': [df_quar['Start'].min() + pd.offsets.MonthBegin(i-1) for i in range(7)],
-                },
-                'yaxis': {
-                    'showgrid': False,
-                    'zeroline': False,
-                    'showticklabels': False
-                },
-                'showlegend': False
-            }
-        }
-    ),
     dcc.Graph(
         figure={
             'data': [
                         go.Scatter(
-                            x=[pd.datetime.now().date(), pd.datetime.now().date()],
-                            y=[0, len(df_quar) * line_height],
+                            x=[x_points[0], x_points[1]],
+                            y=[info_height, info_height],
                             mode='lines',
-                            name='Today',
                             line={
-                                'width': 2,
-                                'color': 'rgb(0,0,0)'
-                            }
+                                'width': 5,
+                                'color': x_color[0]
+                            },
+                            hoverinfo='none'
+                        ),
+                        go.Scatter(
+                            x=[x_points[1], x_points[2]],
+                            y=[info_height, info_height],
+                            mode='lines',
+                            line={
+                                'width': 5,
+                                'color': x_color[2]
+                            },
+                            hoverinfo='none'
+                        ),
+                        go.Scatter(
+                            x=[x_points[2], x_points[4]],
+                            y=[info_height, info_height],
+                            mode='lines',
+                            line={
+                                'width': 5,
+                                'color': 'rgb(173,173,173)'
+                            },
+                            hoverinfo='none'
+                        ),
+                        go.Scatter(
+                            x=x_points,
+                            y=[info_height] * len(x_points),
+                            mode='markers',
+                            marker={
+                                'size': 15,
+                                'color': x_color
+                            },
+                            hoverinfo='none'
                         )
                     ] + [
                         go.Scatter(
-                            x=[row['Start'], row['PEnd']],
+                            x=[row['Start'], row['Start'] + pd.offsets.Day(max_confirmed_days)],
                             y=[index * line_height, index * line_height],
                             mode='lines',
-                            name=row['Name'],
                             line={
                                 'width': 2,
-                                'color': 'rgb(128,128,128)',
-                                'dash': 'dash'
-                            }
-                        ) for index, row in df_quar.iterrows()
+                                'color': x_color[3]
+                            },
+                            hoverinfo='none'
+                        ) for index, row in df_quar[df_quar['Confirmed'] != 'Confirmed'].iterrows()
+                    ] + [
+                        go.Scatter(
+                            x=[row['Start'] + pd.offsets.Day(average_confirmed_days),
+                               row['Start'] + pd.offsets.Day(max_confirmed_days)],
+                            y=[index * line_height, index * line_height],
+                            mode='markers',
+                            marker={
+                                'size': 10,
+                                'color': [x_color[3], x_color[4]]
+                            },
+                            text=[
+
+                                (row['Start'] + pd.offsets.Day(average_confirmed_days)).strftime(
+                                    '%B %d') + ' - Average duration from lockdown start - ' + row['CCE'] + ' ' + row[
+                                    'Name'],
+                                (row['Start'] + pd.offsets.Day(max_confirmed_days)).strftime(
+                                    '%B %d') + ' - Maximum duration from lockdown start - ' + row['CCE'] + ' ' + row[
+                                    'Name'],
+                            ],
+                            hoverinfo='text'
+                        ) for index, row in df_quar[df_quar['Confirmed'] != 'Confirmed'].iterrows()
                     ] + [
                         go.Scatter(
                             x=[row['Start'], row['Finish']],
                             y=[index * line_height, index * line_height],
                             mode='lines',
-                            name=row['Name'],
                             line={
-                                'width': 4 if row['Level'] == 'National' else 2,
-                                'color': 'rgb(0,255,0)' if row['Status'] == 'Ended' else 'rgb(255,0,0)'
-                            }
+                                'width': 3,
+                                'color': 'rgb(0,255,165)' if row['Finish'] <= pd.datetime.now() else x_color[0],
+                            },
+                            hoverinfo='none'
+                        ) for index, row in df_quar.iterrows()
+                    ] + [
+                        go.Scatter(
+                            x=[row['Finish']],
+                            y=[index * line_height],
+                            mode='markers',
+                            marker={
+                                'size': 10,
+                                'color': x_color[2] if row['Finish'] <= pd.datetime.now() else x_color[1],
+                            },
+                            text=row['Finish'].strftime(
+                                '%B %d') + ' - Lockdown review date - ' + row['CCE'] + ' ' + row['Name'],
+                            hoverinfo='text'
                         ) for index, row in df_quar.dropna(subset=['Finish']).iterrows()
+                    ] + [
+                        go.Scatter(
+                            x=[row['Start']],
+                            y=[index * line_height],
+                            mode='markers',
+                            marker={
+                                'size': 10,
+                                'color': x_color[0],
+                            },
+                            text=row['Start'].strftime(
+                                '%B %d') + ' - Lockdown started - ' + row['CCE'] + ' ' + row['Name'],
+                            hoverinfo='text'
+                        ) for index, row in df_quar.iterrows()
                     ],
             'layout': {
-                'height': 1200,
+                'hovermode': 'closest',
+                'height': 1800,
                 'margin': {'l': 40, 'b': 30, 't': 0, 'r': 10},
-                'annotations': [{
-                    'x': row['Finish'], 'y': index * line_height, 'xref': 'x', 'yref': 'y', 'showarrow': False,
-                    'font': {'size': 12},
-                    'xanchor': 'left',
-                    'text': '⚠️'
-                } for index, row in df_quar.dropna(subset=['Finish']).iterrows()] + [{
+                'annotations': [
+                                   {
+                                       'x': x, 'y': info_height, 'xref': 'x', 'yref': 'y', 'showarrow': True,
+                                       'arrowhead': 0, 'ax': 0, 'ay': -40, 'arrowcolor': color,
+                                       'font': {'size': 14},
+                                       'xanchor': 'middle',
+                                       'text': text
+                                   } for x, text, color in zip(x_points, x_text, x_color)
+                               ] + [{
                     'x': row['Start'], 'y': index * line_height, 'xref': 'x', 'yref': 'y', 'showarrow': False,
-                    'font': {'size': 12},
+                    'font': {'size': 15},
                     'xanchor': 'right',
                     'yanchor': 'middle',
 
-                    'text': row['CCE'] + ' ' + row['Name']
+                    'text': row['Name'] + '          '
+                } for index, row in df_quar.iterrows()] + [{
+                    'x': row['Start'], 'y': index * line_height, 'xref': 'x', 'yref': 'y', 'showarrow': False,
+                    'font': {'size': 22},
+                    'xanchor': 'right',
+                    'yanchor': 'middle',
+
+                    'text': row['CCE'] + '  '
                 } for index, row in df_quar.iterrows()],
                 'xaxis': {
                     'showline': False,
                     'zeroline': False,
                     'tickformat': '%B \'%y',
-                    'tickvals': [df_quar['Start'].min() + pd.offsets.MonthBegin(i-1) for i in range(7)],
+                    'tickvals': [df_quar['Start'].min() + pd.offsets.MonthBegin(i - 1) for i in range(7)],
                 },
                 'yaxis': {
                     'showgrid': False,
