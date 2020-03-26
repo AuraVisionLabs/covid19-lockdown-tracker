@@ -1,2 +1,5 @@
-# covid19-lockdown-tracker
-Tracking lockdowns around the world
+# Global COVID-19 Lockdown Tracker
+
+The coronavirus outbreak is a global human tragedy, affecting hundreds of thousands of people. It is also having a growing impact on the global economy, not least retailers who are suffering an unprecendented loss in business.
+
+Aura Vision\'s Global Lockdown Tracker provides business leaders with a view of quarantine timelines and typical durations as the situation evolves. This tool visualises how past and current lockdowns are unfolding using publically available information from [Wikipedia](https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic#In_other_countries) but cannot be used to predicted when each lockdown will end. We hope you find this tool useful, for more information please contact [hello@auravision.ai](mailto:hello@auravision.ai)
