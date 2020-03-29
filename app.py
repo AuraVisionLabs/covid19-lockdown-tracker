@@ -57,7 +57,7 @@ max_confirmed_days = df_quar[df_quar['Confirmed'] == 'Confirmed']['Duration'].ma
 average_to_review_days = (df_quar[df_quar['Confirmed'] != 'Confirmed']['Finish'] - pd.datetime.now()).mean().days
 average_into_lockdown_days = (pd.datetime.now() - df_quar[df_quar['Confirmed'] != 'Confirmed']['Start']).mean().days
 df_quar['Complete'] = df_quar['Finish'] <= pd.datetime.now()
-total_finished = (df_quar.groupby('Country')['Complete'].mean() == 1.0).sum()
+total_finished = (df_quar[df_quar['Confirmed'] == 'Confirmed'].groupby('Country')['Complete'].mean() == 1.0).sum()
 
 df_quar_wuh = df_quar[df_quar['Place'] == 'Wuhan'].iloc[0]
 # df_quar = df_quar.groupby('Country').agg({'Start': 'min', 'Finish': 'max', 'Confirmed': 'max'}).reset_index()
@@ -215,7 +215,7 @@ fig2 = go.Figure(
                  mode='lines',
                  line={
                      'width': 3,
-                     'color': 'rgb(0,255,165)' if row['Finish'] <= pd.datetime.now() else x_color[0],
+                     'color': x_color[3] if row['Finish'] <= pd.datetime.now() and row['Confirmed'] == 'Confirmed' else x_color[0],
                  },
                  hoverinfo='none',
                  xaxis='x2',
