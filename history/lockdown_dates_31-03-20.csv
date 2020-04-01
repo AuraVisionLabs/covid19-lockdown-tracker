@@ -1,0 +1,135 @@
+,Confirmed,Country,End date,Level,Place,Start date
+0,,Algeria,,City,Algiers,2020-03-23
+1,,Algeria,,City,Blida,2020-03-23
+2,,Argentina,2020-04-12,National,,2020-03-19
+3,,Australia,,National,,2020-03-23
+4,,Austria,2020-04-13,National,,2020-03-16
+5,,Belgium,2020-04-18,National,,2020-03-18
+6,,Bolivia,,National,,2020-03-22
+7,,Brazil,2020-04-08,State,Santa Catarina,2020-03-17
+8,,Brazil,2020-04-07,State,São Paulo,2020-03-24
+9,,Chile,,National,,2020-03-19
+10,,Colombia,2020-04-13,National,,2020-03-25
+11,,Cuba,,National,,2020-03-23
+12,,Czech Republic,2020-04-01,National,,2020-03-16
+13,,Denmark,2020-04-13,National,,2020-03-11
+14,,Dominican Republic,2020-04-03,National,,2020-03-19
+15,,Ecuador,2020-03-31,National,,2020-03-16
+16,,El Salvador,2020-04-01,National,,2020-03-12
+17,,Fiji,,City,Lautoka,2020-03-20
+18,,Finland,,Region,Uusimaa,2020-03-27
+19,,France,2020-04-15,National,,2020-03-17
+20,,Germany,2020-04-03,State,Bavaria,2020-03-20
+21,,Germany,2020-04-03,City,"Freiburg, BW",2020-03-21
+22,,Ghana,,Metropolitan Area,Accra,2020-03-30
+23,,Ghana,,Metropolitan Area,Kumasi,2020-03-30
+24,,Greece,2020-04-06,National,,2020-03-23
+25,,Honduras,2020-04-12,National,,2020-03-17
+26,,Hungary,2020-04-11,National,,2020-03-28
+27,,India,2020-04-15,National,,2020-03-25
+28,,Indonesia,2020-07-25,City,Tegal,2020-03-26
+29,,Iraq,2020-04-11,National,,2020-03-22
+30,,Ireland,2020-04-12,National,,2020-03-12
+31,,Italy,2020-04-12,National,,2020-03-09
+32,,Jordan,,National,,2020-03-21
+35,,Liberia,,County,Margibi,2020-03-23
+36,,Liberia,,County,Montserrado,2020-03-23
+37,,Libya,,National,,2020-03-22
+39,,Madagascar,,City,Antananarivo,2020-03-23
+40,,Madagascar,,City,Toamasina,2020-03-23
+41,,Malaysia,2020-04-14,National,,2020-03-18
+42,,Montenegro,,Municipality,Tuzi,2020-03-24
+43,,Morocco,2020-04-20,National,,2020-03-19
+44,,Nepal,2020-04-07,National,,2020-03-24
+45,,New Zealand,,National,,2020-03-26
+46,,Nigeria,,City,Abuja,2020-03-30
+47,,Nigeria,,City,Lagos,2020-03-30
+48,,Nigeria,,State,Ogun,2020-03-30
+49,,Norway,2020-04-13,National,,2020-03-12
+50,,Pakistan,2020-04-06,Province,Punjab,2020-03-24
+51,,Pakistan,2020-04-07,Province,Sindh,2020-03-24
+52,,Pakistan,2020-04-07,Province,Balochistan,2020-03-24
+53,,Pakistan,,Administrative,Gilgit-Baltistan,2020-03-22
+54,,Pakistan,2020-04-07,Administrative,Azad Kashmir,2020-03-24
+55,,Panama,,National,,2020-03-25
+56,,Papua New Guinea,,National,,2020-03-24
+57,,Paraguay,2020-04-12,National,,2020-03-20
+58,,Peru,,National,,2020-03-16
+59,,Philippines,,Province,Cebu,2020-03-27
+60,,Philippines,,Region,Davao Region,2020-03-19
+61,,Philippines,2020-04-14,Island group,Luzon,2020-03-15
+62,,Philippines,,Region,Soccsksargen,2020-03-23
+63,,Poland,,National,,2020-03-13
+64,,Portugal,2020-04-02,National,,2020-03-19
+65,,Romania,,National,,2020-03-25
+66,,Russia,,City,Moscow,2020-03-30
+67,,Rwanda,,National,,2020-03-21
+68,,Samoa,2020-04-09,National,,2020-03-26
+69,,Saudi Arabia,,City,Jeddah,2020-03-29
+70,,Saudi Arabia,,City,Mecca,2020-03-26
+71,,Saudi Arabia,,City,Medina,2020-03-26
+72,,Saudi Arabia,,Area,Qatif,2020-03-09
+73,,Saudi Arabia,,City,Riyadh,2020-03-26
+74,,South Africa,2020-04-16,National,,2020-03-26
+75,,Spain,2020-04-14,National,,2020-03-14
+76,,Tunisia,,National,,2020-03-22
+78,,United Kingdom,2020-04-13,National,,2020-03-23
+80,,United States,2020-04-20,County,"Clark County, NV",2020-03-20
+83,,United States,2020-04-23,City,"Kansas City, KS",2020-03-24
+89,,Venezuela,,National,,2020-03-17
+90,,Zimbabwe,,National,,2020-03-30
+91,,United States,2020-04-11,,Alaska,2020-03-28
+92,,United States,,,Arizona,2020-03-31
+93,,United States,,,California,2020-03-19
+94,,United States,2020-04-11,,Colorado,2020-03-26
+95,,United States,,,Connecticut,2020-03-23
+96,,United States,2020-05-15,,Delaware,2020-03-24
+97,,United States,,,District of Columbia,2020-04-01
+98,,United States,2020-04-30,,Hawaii,2020-03-25
+99,,United States,2020-04-15,,Idaho,2020-03-25
+100,,United States,2020-04-07,,Illinois,2020-03-21
+101,,United States,2020-04-06,,Indiana,2020-03-24
+102,,United States,2020-04-19,,Kansas,2020-03-30
+103,,United States,2020-04-12,,Louisiana,2020-03-23
+105,,United States,2020-04-07,,Massachusetts,2020-03-24
+106,,United States,2020-04-14,,Michigan,2020-03-24
+107,,United States,2020-04-10,,Minnesota,2020-03-27
+108,,United States,,,Montana,2020-03-28
+109,,United States,2020-05-04,,New Hampshire,2020-03-27
+110,,United States,,,New Jersey,2020-03-21
+111,,United States,,,New Mexico,2020-03-24
+112,,United States,,,New York,2020-03-22
+113,,United States,,,North Carolina,2020-03-30
+114,,United States,2020-04-06,,Ohio,2020-03-23
+115,,United States,,,Oregon,2020-03-23
+116,,United States,2020-04-26,,Rhode Island,2020-03-30
+119,,United States,,,Washington,2020-03-25
+120,,United States,,,West Virginia,2020-03-24
+122,,United States,2020-04-24,,Wisconsin,2020-03-25
+123,,United States,2020-04-15,,Vermont,2020-03-25
+124,,United States,2020-04-07,,Maryland,2020-03-23
+125,,United States,,,Nevada,2020-03-17
+126,,United States,2020-04-23,,Virginia,2020-03-24
+127,,United States,,,Kentucky,2020-03-23
+128,,United States,,,Georgia,2020-03-23
+129,,United States,2020-04-30,,Oklahoma,2020-03-25
+130,,Lithuania,2020-04-13,National,,2020-03-16
+131,,United Arab Emirates,2020-04-05,National,,2020-03-22
+132,,Lebanon,2020-04-12,National,,2020-03-22
+133,,Kuwait,,National,,2020-03-14
+1,Confirmed,China,2020-04-08,City,Wuhan,2020-01-23
+2,Confirmed,China,2020-03-25,City,Xiaogan,2020-01-24
+3,Confirmed,China,2020-03-25,City,Huanggang,2020-01-23
+4,Confirmed,China,2020-03-17,City,Jingzhou,2020-01-24
+5,Confirmed,China,2020-03-25,City,Ezhou,2020-01-23
+6,Confirmed,China,2020-03-25,City,Suizhou,2020-01-24
+7,Confirmed,China,2020-03-25,City,Xiangyang,2020-01-28
+8,Confirmed,China,2020-03-13,City,Huangshi,2020-01-24
+9,Confirmed,China,2020-03-25,City,Yichang,2020-01-24
+10,Confirmed,China,2020-03-25,City,Jingmen,2020-01-24
+11,Confirmed,China,2020-03-25,City,Xianning,2020-01-24
+12,Confirmed,China,2020-03-25,City,Shiyan,2020-01-24
+13,Confirmed,China,2020-03-25,City,Xiantao,2020-01-24
+14,Confirmed,China,2020-03-25,City,Tianmen,2020-01-24
+15,Confirmed,China,2020-03-25,City,Enshi,2020-01-24
+16,Confirmed,China,2020-03-13,City,Qianjiang,2020-01-24
