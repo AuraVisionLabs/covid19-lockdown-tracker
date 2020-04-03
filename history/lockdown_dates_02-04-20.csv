@@ -11,10 +11,10 @@ Confirmed,Country,End date,Level,Place,Start date
 ,Chile,2020-04-14,National,,2020-03-19
 ,Colombia,2020-04-13,National,,2020-03-25
 ,Costa Rica,2020-04-13,National,,2020-03-23
+,Croatia,2020-04-13,Municipality,Murter,2020-03-25
 ,Cuba,2020-04-19,National,,2020-03-23
 ,Denmark,2020-04-13,National,,2020-03-11
 ,Dominican Republic,2020-04-03,National,,2020-03-19
-,Ecuador,2020-03-31,National,,2020-03-16
 ,Fiji,2020-04-10,City,Lautoka,2020-03-20
 ,Finland,2020-04-14,Region,Uusimaa,2020-03-27
 ,France,2020-04-15,National,,2020-03-17
@@ -28,7 +28,7 @@ Confirmed,Country,End date,Level,Place,Start date
 ,Indonesia,2020-07-25,City,Tegal,2020-03-26
 ,Iraq,2020-04-11,National,,2020-03-22
 ,Ireland,2020-04-12,National,,2020-03-12
-,Italy,2020-04-12,National,,2020-03-09
+,Italy,2020-04-13,National,,2020-03-09
 ,Jordan,2020-04-12,National,,2020-03-21
 ,Liberia,2020-04-14,County,Margibi,2020-03-23
 ,Liberia,2020-04-14,County,Montserrado,2020-03-23
@@ -39,10 +39,12 @@ Confirmed,Country,End date,Level,Place,Start date
 ,Montenegro,2020-04-14,Municipality,Tuzi,2020-03-24
 ,Morocco,2020-04-20,National,,2020-03-19
 ,Nepal,2020-04-07,National,,2020-03-24
+,Netherlands,2020-04-15,National,,2020-03-16
 ,New Zealand,2020-04-19,National,,2020-03-26
 ,Nigeria,2020-04-14,City,Abuja,2020-03-30
 ,Nigeria,2020-04-14,City,Lagos,2020-03-30
 ,Nigeria,2020-04-14,State,Ogun,2020-03-30
+,Cyprus,2020-04-03,National,Northern Cyprus,2020-03-30
 ,Norway,2020-04-13,National,,2020-03-12
 ,Pakistan,2020-04-07,Administrative,Azad Kashmir,2020-03-24
 ,Pakistan,2020-04-07,Province,Balochistan,2020-03-24
@@ -57,7 +59,6 @@ Confirmed,Country,End date,Level,Place,Start date
 ,Philippines,2020-04-14,Island group,Luzon,2020-03-15
 ,Philippines,2020-04-14,Region,Soccsksargen,2020-03-23
 ,Poland,2020-04-12,National,,2020-03-13
-,Portugal,2020-04-02,National,,2020-03-19
 ,Romania,2020-04-14,National,,2020-03-25
 ,Russia,2020-04-12,Metropolitan area,Moscow,2020-03-30
 ,Rwanda,2020-04-12,National,,2020-03-21
@@ -107,7 +108,7 @@ Confirmed,Country,End date,Level,Place,Start date
 ,United States,,State,Nevada,2020-03-17
 ,United States,2020-04-23,State,Virginia,2020-03-24
 ,United States,,State,Kentucky,2020-03-23
-,United States,,State,Georgia,2020-03-23
+,United States,2020-04-13,State,Georgia,2020-04-03
 ,United States,2020-04-30,State,Oklahoma,2020-03-25
 ,Lithuania,2020-04-13,National,,2020-03-16
 ,United Arab Emirates,2020-04-05,National,,2020-03-22
@@ -128,6 +129,8 @@ Confirmed,Country,End date,Level,Place,Start date
 ,Sri Lanka,,National,,2020-03-20
 ,Russia,,National,,2020-03-30
 ,Puerto Rico,,National,,2020-03-15
+,Georgia,2020-04-21,National,,2020-03-31
+,Portugal,2020-04-16,National,,2020-03-19
 Confirmed,China,2020-04-08,City,Wuhan,2020-01-23
 Confirmed,China,2020-03-25,City,Xiaogan,2020-01-24
 Confirmed,China,2020-03-25,City,Huanggang,2020-01-23
