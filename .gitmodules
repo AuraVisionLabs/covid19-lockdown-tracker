@@ -1,0 +1,3 @@
+[submodule "areweinlockdown-com"]
+	path = areweinlockdown-com
+	url = https://github.com/thebeardbe/areweinlockdown-com.git
