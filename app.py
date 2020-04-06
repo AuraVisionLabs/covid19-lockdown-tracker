@@ -20,10 +20,13 @@ df_arewe = pd.DataFrame([{
 } for r in js_arewe])
 df_arewe_ls = df_arewe[df_arewe['Lockdown'] | df_arewe['Shops']]
 
-wiki_r = requests.get("https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic")
-wiki_soup = BeautifulSoup(wiki_r.content, "html.parser")
-wiki_inter_table = wiki_soup.find_all("span", string="Coronavirus quarantines outside China")[0].find_parent('table')
-wiki_china_table = wiki_soup.find_all("span", string="Cities under quarantine in China")[0].find_parent('table')
+wiki_inter_req = requests.get("https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic")
+wiki_inter_soup = BeautifulSoup(wiki_inter_req.content, "html.parser")
+wiki_inter_table = wiki_inter_soup.find_all("span", string="Coronavirus quarantines outside China")[0].find_parent('table')
+
+wiki_china_req = requests.get("https://en.wikipedia.org/wiki/2020_Hubei_lockdowns")
+wiki_china_soup = BeautifulSoup(wiki_china_req.content, "html.parser")
+wiki_china_table = wiki_china_soup.find_all("span", string="Cities under quarantine in China")[0].find_parent('table')
 wiki_china_table.find_all("th", text=re.compile('^Quarantine total$'))[0].find_parent('tr').decompose()
 wiki_china_table.findAll('tr')[-1].decompose()
 
@@ -50,8 +53,8 @@ def remove_sup(tab, soup):
     return links, dates
 
 
-wiki_inter_links, wiki_inter_dates = remove_sup(wiki_inter_table, wiki_soup)
-wiki_china_links, wiki_china_dates = remove_sup(wiki_china_table, wiki_soup)
+wiki_inter_links, wiki_inter_dates = remove_sup(wiki_inter_table, wiki_inter_soup)
+wiki_china_links, wiki_china_dates = remove_sup(wiki_china_table, wiki_china_soup)
 
 df_wiki_inter = pd.read_html(str(wiki_inter_table), header=None)[0]
 print('wiki international', len(df_wiki_inter), len(wiki_inter_links))
@@ -90,13 +93,15 @@ print(set(df_quar['Country']) - set(df_arewe_ls['Country']))
 print('not in ours')
 print(set(df_arewe_ls['Country']) - set(df_quar['Country']))
 
-# df_quar.to_csv('deploy/lockdown_dates.csv', index=False)
-# df_quar.to_csv('history/lockdown_dates_%s.csv' % (pd.datetime.now().strftime('%d-%m-%y')), index=False)
-# df_quar_old = pd.read_csv(
-#     'history/lockdown_dates_%s.csv' % ((pd.datetime.now() - pd.offsets.Day(1)).strftime('%d-%m-%y')))
-#
-# df_old_new = pd.concat([df_quar, df_quar_old], sort=False)[['Country', 'Place', 'Start date', 'End date', 'update']].drop_duplicates().sort_values(['Country', 'Place'])
-# print(df_old_new)
+df_quar.to_csv('deploy/lockdown_dates.csv', index=False)
+df_quar.to_csv('history/lockdown_dates_%s.csv' % (pd.datetime.now().strftime('%d-%m-%y')), index=False)
+df_quar_old = pd.read_csv(
+    'history/lockdown_dates_%s.csv' % ((pd.datetime.now() - pd.offsets.Day(1)).strftime('%d-%m-%y')))
+
+df_old_new = pd.concat([df_quar, df_quar_old], sort=False)[['Country', 'Place', 'Start date', 'End date', 'update']]
+df_old_new['update'] = pd.to_datetime(df_old_new['update'], format='%Y-%m-%d')
+df_old_new = df_old_new.drop_duplicates(keep=False).sort_values(['Country', 'Place'])
+print(df_old_new)
 
 df_quar['Start'] = pd.to_datetime(df_quar['Start date'], format='%Y-%m-%d')
 df_quar['Finish'] = pd.to_datetime(df_quar['End date'], format='%Y-%m-%d')
@@ -354,7 +359,7 @@ fig2 = go.Figure(
                                'yanchor': 'top',
                                'align': 'left',
                                'text': '<b>Last updated ' + pd.datetime.now().strftime(
-                                   '%d %B %Y') + '</b><br>The most comprehensive source for how past and current lockdowns are unfolding, updated daily. Please share if you find this useful.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>.',
+                                   '%d %B %Y') + '</b><br>The most comprehensive source for how past and current lockdowns are unfolding, updated daily.<br>Lockdowns dates reflect when non-essential retail has been ordered to close by local government.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>. Please share if you find this useful.',
                            },
                            {
                                'x': 1.0, 'y': 0, 'xref': 'paper', 'yref': 'paper',

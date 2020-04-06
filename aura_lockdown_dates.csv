@@ -11,7 +11,7 @@ United States,Florida,2020-04-03,2020-04-30,State,False,2020-04-04,https://editi
 United States,Hawaii,2020-03-25,2020-04-30,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Idaho,2020-03-25,2020-04-15,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Illinois,2020-03-21,2020-04-07,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
-United States,Indiana,2020-03-24,2020-04-06,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
+United States,Indiana,2020-03-24,2020-04-20,State,False,2020-04-06,https://www.wibc.com/news/coronavirus/holcomb-to-extend-statewide-lockdown-through-april-20/
 United States,Kansas,2020-03-30,2020-04-19,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Louisiana,2020-03-23,2020-04-30,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Maine,2020-04-02,2020-04-30,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
@@ -27,7 +27,7 @@ United States,New Jersey,2020-03-21,,State,False,2020-04-04,https://edition.cnn.
 United States,New Mexico,2020-03-24,,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,New York,2020-03-22,,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,North Carolina,2020-03-30,,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
-United States,Ohio,2020-03-23,2020-04-06,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
+United States,Ohio,2020-03-23,2020-05-01,State,False,2020-04-06,https://www.13abc.com/content/news/Gov-DeWine-extends-coronavirus--569322881.html
 United States,Oregon,2020-03-23,,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Pennsylvania,2020-04-01,2020-04-26,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Rhode Island,2020-03-30,2020-04-26,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
@@ -44,7 +44,7 @@ United States,Virginia,2020-03-24,2020-04-23,State,False,2020-04-04,https://edit
 United States,Kentucky,2020-03-23,,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Georgia,2020-04-03,2020-04-13,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
 United States,Oklahoma,2020-03-25,2020-04-30,State,False,2020-04-04,https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html
-United Arab Emirates,United Arab Emirates,2020-03-22,2020-04-05,National,False,2020-04-04,https://www.arabianbusiness.com/healthcare/443885-uae-extends-sterilisation-programme-until-april-5
+United Arab Emirates,United Arab Emirates,2020-03-22,2020-04-18,National,False,2020-04-06,https://www.garda.com/crisis24/news-alerts/329386/uae-authorities-lock-down-dubai-as-of-april-4-due-to-covid-19-outbreak-update-21
 Lebanon,Lebanon,2020-03-22,,National,False,2020-04-04,https://the961.com/major-malls-across-lebanon-close-until-further-notice/
 Canada,Quebec,2020-03-13,,Province,False,2020-04-04,https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/
 El Salvador,El Salvador,2020-03-21,2020-04-21,National,False,2020-04-04,https://www.reuters.com/article/us-health-coronavirus-el-salvador/el-salvador-registers-first-coronavirus-infection-president-says-idUSKBN2160CF
@@ -66,3 +66,5 @@ Ukraine,Ukraine,2020-03-30,2020-04-24,National,False,2020-04-04,https://www.kyiv
 Serbia,Serbia,2020-03-21,,National,False,2020-04-04,https://www.zdravlje.gov.rs/vest/346687/informacije-o-novom-korona-virusu-2103-u-8-casova.php
 Senegal,Senegal,2020-03-30,,National,False,2020-04-04,https://qz.com/africa/1827789/coronavirus-ghana-senegal-burkina-faso-shut-down/
 Sierra Leone,Sierra Leone,2020-04-04,2020-04-07,National,False,2020-04-04,https://medicalxpress.com/news/2020-04-sierra-leone-three-day-lockdown-coronavirus.html
+Greece,Greece,2020-03-23,2020-04-27,National,False,2020-04-06,https://www.brusselstimes.com/all-news/104861/coronavirus-greece-extends-lockdown-to-27-april/
+Nepal,Nepal,2020-03-24,2020-04-07,National,False,2020-04-06,https://myrepublica.nagariknetwork.com/news/govt-mulls-extending-lockdown-by-at-least-one-week/
