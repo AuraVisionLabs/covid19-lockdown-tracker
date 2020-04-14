@@ -1,110 +1,133 @@
 Country,Place,Start date,End date,Level,url,update,Confirmed
-Algeria,Algiers,2020-03-23,2020-04-14,City,https://www.garda.com/crisis24/news-alerts/325896/algeria-government-implements-lockdown-and-curfew-in-blida-and-algiers-march-23-update-7,2020-03-30,False
-Algeria,Blida,2020-03-23,2020-04-14,City,https://www.garda.com/crisis24/news-alerts/325896/algeria-government-implements-lockdown-and-curfew-in-blida-and-algiers-march-23-update-7,2020-03-30,False
-Argentina,Argentina,2020-03-19,2020-04-12,National,https://www.bloomberg.com/news/articles/2020-03-20/argentina-orders-exceptional-lockdown-in-bid-to-contain-virus,2020-03-20,False
-Australia,Australia,2020-03-23,2020-04-24,National,https://www.straitstimes.com/asia/australianz/australia-starts-lockdown-measures-as-coronavirus-cases-jump,2020-03-23,False
+Albania,Albania,2020-03-13,2020-04-19,National,https://www.reuters.com/article/us-health-coronavirus-albania/albania-extends-lockdown-till-end-of-coronavirus-outbreak-idUSKBN21J6AZ/,2020-04-04,False
+Algeria,Algiers,2020-03-23,2020-04-19,City,https://www.garda.com/crisis24/news-alerts/325896/algeria-government-implements-lockdown-and-curfew-in-blida-and-algiers-march-23-update-7,2020-03-30,False
+Algeria,Blida,2020-03-23,2020-04-19,City,https://www.garda.com/crisis24/news-alerts/325896/algeria-government-implements-lockdown-and-curfew-in-blida-and-algiers-march-23-update-7,2020-03-30,False
+Argentina,Argentina,2020-03-19,2020-04-26,National,https://www.bloomberg.com/news/articles/2020-03-20/argentina-orders-exceptional-lockdown-in-bid-to-contain-virus,2020-03-20,False
+Armenia,Armenia,2020-03-24,2020-04-14,National,https://www.azatutyun.am/a/30520272.html,2020-04-13,False
+Australia,Australia,2020-03-23,2020-04-28,National,https://www.straitstimes.com/asia/australianz/australia-starts-lockdown-measures-as-coronavirus-cases-jump,2020-03-23,False
 Austria,Austria,2020-03-16,2020-04-13,National,https://orf.at/stories/3158055/,2020-03-20,False
 Azerbaijan,Azerbaijan,2020-03-31,2020-04-20,National,https://www.aa.com.tr/en/latest-on-coronavirus-outbreak/azerbaijan-to-impose-curfew-amid-coronavirus-outbreak/1785680,2020-04-05,False
-Belgium,Belgium,2020-03-18,2020-04-18,National,https://www.theguardian.com/world/gallery/2020/mar/18/belgium-enters-lockdown-over-coronavirus-crisis-in-pictures,2020-03-20,False
-Bolivia,Bolivia,2020-03-22,2020-04-14,National,https://www.euronews.com/2020/03/19/coronavirus-which-countries-are-under-lockdown-and-who-s-next,2020-03-30,False
+Bangladesh,Bangladesh,2020-03-26,2020-04-25,National,https://www.dhakatribune.com/bangladesh/2020/03/23/govt-offices-to-remain-closed-till-april-4,2020-04-11,False
+Belgium,Belgium,2020-03-18,2020-04-19,National,https://www.theguardian.com/world/gallery/2020/mar/18/belgium-enters-lockdown-over-coronavirus-crisis-in-pictures,2020-03-20,False
+Bolivia,Bolivia,2020-03-22,2020-04-15,National,https://www.euronews.com/2020/03/19/coronavirus-which-countries-are-under-lockdown-and-who-s-next,2020-03-30,False
 Botswana,Botswana,2020-04-02,2020-04-30,National,https://www.msn.com/en-za/news/africa/botswana-declares-state-of-emergency-lockdown-in-wake-of-covid-19-cases/ar-BB11X4lP?li=BBqfWMJ,2020-04-03,False
-Brazil,Santa Catarina,2020-03-17,2020-04-08,State,https://g1.globo.com/sc/santa-catarina/noticia/2020/03/29/casos-de-pacientes-com-coronavirus-sobe-para-197-em-sc-e-governo-prorroga-quarentena.ghtml,2020-04-01,False
-Brazil,São Paulo,2020-03-24,2020-04-07,State,https://g1.globo.com/jornal-nacional/noticia/2020/03/21/governo-de-sao-paulo-decreta-quarentena-de-15-dias-em-todo-o-estado-por-causa-do-coronavirus.ghtml,2020-03-23,False
-Chile,Chile,2020-03-19,2020-04-14,National,https://nationalpost.com/pmn/health-pmn/chile-announces-nationwide-nightly-curfew-coronavirus-cases-hit-632,2020-03-24,False
-Colombia,Colombia,2020-03-25,2020-04-13,National,https://www.eltiempo.com/salud/cuarentena-total-en-colombia-por-el-coronavirus-declara-el-presidente-ivan-duque-475512,2020-03-22,False
+Brazil,Santa Catarina,2020-03-17,2020-04-07,State,https://g1.globo.com/sc/santa-catarina/noticia/2020/03/29/casos-de-pacientes-com-coronavirus-sobe-para-197-em-sc-e-governo-prorroga-quarentena.ghtml,2020-04-01,False
+Brazil,São Paulo,2020-03-24,2020-04-08,State,https://g1.globo.com/jornal-nacional/noticia/2020/03/21/governo-de-sao-paulo-decreta-quarentena-de-15-dias-em-todo-o-estado-por-causa-do-coronavirus.ghtml,2020-03-23,False
+Chile,Chile,2020-03-19,2020-04-17,National,https://nationalpost.com/pmn/health-pmn/chile-announces-nationwide-nightly-curfew-coronavirus-cases-hit-632,2020-03-24,False
+Colombia,Colombia,2020-03-25,2020-04-13,National,https://www.elcolombiano.com/colombia/salud/cuarentena-por-coronavirus-en-colombia-se-amplia-hasta-el-27-de-abril-anuncia-duque-GC12765113,2020-04-06,False
 Republic of the Congo,Republic of the Congo,2020-03-31,2020-04-20,National,https://www.msn.com/en-xl/news/other/covid-19-lagos-brazzaville-lockdown-begins/ar-BB11ZAhn,2020-04-03,False
-Costa Rica,Costa Rica,2020-03-23,2020-04-13,National,https://www.ministeriodesalud.go.cr/index.php/centro-de-prensa/noticias/741-noticias-2020/1582-gobierno-endurece-medidas-sanitarias-para-impedir-contagio-de-covid-19,2020-03-23,False
-Croatia,Murter,2020-03-25,2020-04-13,Municipality,https://vijesti.hrt.hr/595672/hrt-na-murteru-policijska-blokada-prijeci-svako-kretanje,2020-04-01,False
-Cuba,Cuba,2020-03-23,2020-04-19,National,https://edition.cnn.com/world/live-news/coronavirus-outbreak-03-24-20-intl-hnk/h_7b694d17a78f2c02d7c76570e1726508,2020-03-31,False
+Costa Rica,Costa Rica,2020-03-23,2020-04-17,National,https://www.ministeriodesalud.go.cr/index.php/centro-de-prensa/noticias/741-noticias-2020/1582-gobierno-endurece-medidas-sanitarias-para-impedir-contagio-de-covid-19,2020-03-23,False
+Croatia,Murter,2020-03-25,2020-04-19,Municipality,https://vijesti.hrt.hr/595672/hrt-na-murteru-policijska-blokada-prijeci-svako-kretanje,2020-04-01,False
+Croatia,Rest of area,2020-03-18,2020-04-19,National,https://www.total-croatia-news.com/news/42223-covid-19,2020-04-07,False
+Cuba,Cuba,2020-03-23,2020-04-20,National,https://edition.cnn.com/world/live-news/coronavirus-outbreak-03-24-20-intl-hnk/h_7b694d17a78f2c02d7c76570e1726508,2020-03-31,False
 Czech Republic,Czech Republic,2020-03-16,2020-04-12,National,https://orf.at/stories/3158055/,2020-03-20,False
 Denmark,Denmark,2020-03-11,2020-04-13,National,https://www.themayor.eu/en/denmark-goes-on-lockdown,2020-03-21,False
-Dominican Republic,Dominican Republic,2020-03-19,2020-04-03,National,https://www.reuters.com/article/us-health-coronavirus-dominicanrepublic/dominican-government-to-suspend-flights-classes-to-curb-coronavirus-idUSKBN2153NY,2020-03-27,False
+Dominican Republic,Dominican Republic,2020-03-19,2020-04-17,National,https://www.reuters.com/article/us-health-coronavirus-dominicanrepublic/dominican-government-to-suspend-flights-classes-to-curb-coronavirus-idUSKBN2153NY,2020-03-27,False
 Ecuador,Ecuador,2020-03-16,2020-03-31,National,https://www.undercurrentnews.com/2020/03/25/ecuador-shrimp-tuna-processors-endure-despite-lockdown-curfew/,2020-03-30,False
-El Salvador,El Salvador,2020-03-12,2020-04-01,National,https://www.theguardian.com/world/live/2020/mar/11/coronavirus-update-live-news-uk-health-minister-italy-lockdown-australia-us-china-stock-markets-outbreak-latest-updates?page=with:block-5e6971ab8f085f0b8d946d20#block-5e6971ab8f085f0b8d946d20,,False
+El Salvador,El Salvador,2020-03-12,2020-04-02,National,,2020-04-14,False
 Eritrea,Eritrea,2020-04-02,2020-04-23,National,http://www.xinhuanet.com/english/2020-04/02/c_138941459.htm,2020-04-04,False
-Fiji,Lautoka,2020-03-20,2020-04-10,City,https://www.channelnewsasia.com/news/world/fiji-city-sealed-off-as-first-covid-19-case-confirmed-12555438,2020-03-19,False
-Fiji,Suva,2020-04-03,2020-04-14,City,https://www.rnz.co.nz/international/pacific-news/413281/fiji-confirms-two-new-covid-19-cases-suva-will-go-into-lockdown,2020-04-02,False
-Finland,Uusimaa,2020-03-27,2020-04-14,Region,https://yle.fi/uutiset/osasto/news/finland_shuts_down_uusimaa_to_fight_coronavirus/11276242,2020-03-27,False
-France,France,2020-03-17,2020-04-15,National,https://www.independent.co.uk/news/world/europe/coronavirus-france-lockdown-cases-update-covid-19-macron-a9405136.html,2020-03-20,False
-Germany,Bavaria,2020-03-20,2020-04-03,State,https://www.dw.com/en/coronavirus-latest-bavaria-announces-lockdown/a-52849294,2020-03-20,False
-Germany,"Freiburg, BW",2020-03-21,2020-04-03,City,https://www.welt.de/politik/deutschland/article206578991/Ausgangsperre-wegen-Corona-in-Deutschland-Merkel-warnt-Koennen-jederzeit-reagieren.html,2020-03-20,False
-Ghana,Accra,2020-03-30,2020-04-14,Metropolitan Area,https://qz.com/africa/1827789/coronavirus-ghana-senegal-burkina-faso-shut-down/,2020-03-30,False
-Ghana,Kumasi,2020-03-30,2020-04-14,Metropolitan Area,https://qz.com/africa/1827789/coronavirus-ghana-senegal-burkina-faso-shut-down/,2020-03-30,False
-Greece,Greece,2020-03-23,2020-04-06,National,https://www.reuters.com/article/us-health-coronavirus-greece-curfew/greece-imposes-lockdown-after-coronavirus-infections-jump-idUSKBN2190Z1,2020-03-23,False
-Honduras,Honduras,2020-03-17,2020-04-12,National,https://covid19honduras.org/?q=toque-de-queda-hasta-12-de-abril,2020-03-29,False
-Hungary,Hungary,2020-03-28,2020-04-11,National,https://www.reuters.com/article/us-health-coronavirus-hungary-restrictio/hungary-pm-imposes-lockdown-sees-coronavirus-peak-by-july-idUSKBN21E0Q2,2020-03-27,False
-India,India,2020-03-25,2020-04-15,National,https://www.indiatoday.in/india/story/novel-coronavirus-covid19-latest-news-update-india-lockdown-confirmed-positive-cases-deaths-uk-usa-italy-iran-china-1658922-2020-03-24,2020-03-24,False
-Indonesia,Tegal,2020-03-26,2020-07-25,City,https://jateng.suara.com/read/2020/03/26/142841/pertama-di-indonesia-walikota-umumkan-tegal-lockdown,2020-03-26,False
+Fiji,Lautoka,2020-03-20,2020-04-07,City,https://www.channelnewsasia.com/news/world/fiji-city-sealed-off-as-first-covid-19-case-confirmed-12555438,2020-03-19,False
+Fiji,Suva,2020-04-03,2020-04-17,City,https://www.rnz.co.nz/international/pacific-news/413281/fiji-confirms-two-new-covid-19-cases-suva-will-go-into-lockdown,2020-04-02,False
+Finland,Uusimaa,2020-03-27,2020-04-16,Region,https://yle.fi/uutiset/osasto/news/finland_shuts_down_uusimaa_to_fight_coronavirus/11276242,2020-03-27,False
+France,France,2020-03-17,2020-05-11,National,https://www.independent.co.uk/news/world/europe/coronavirus-france-lockdown-cases-update-covid-19-macron-a9405136.html,2020-03-20,False
+Georgia,Georgia,2020-03-31,2020-04-21,National,https://civil.ge/archives/344761,2020-04-13,False
+Germany,Bavaria,2020-03-20,2020-04-19,State,https://www.dw.com/en/coronavirus-latest-bavaria-announces-lockdown/a-52849294,2020-03-20,False
+Germany,"Freiburg,BW",2020-03-21,2020-04-03,City,https://www.welt.de/politik/deutschland/article206578991/Ausgangsperre-wegen-Corona-in-Deutschland-Merkel-warnt-Koennen-jederzeit-reagieren.html,2020-03-20,False
+Ghana,Accra,2020-03-30,2020-04-12,Metropolitan Area,https://qz.com/africa/1827789/coronavirus-ghana-senegal-burkina-faso-shut-down/,2020-03-30,False
+Ghana,Kumasi,2020-03-30,2020-04-12,Metropolitan Area,https://qz.com/africa/1827789/coronavirus-ghana-senegal-burkina-faso-shut-down/,2020-03-30,False
+Greece,Greece,2020-03-23,2020-04-27,National,https://www.reuters.com/article/us-health-coronavirus-greece-curfew/greece-imposes-lockdown-after-coronavirus-infections-jump-idUSKBN2190Z1,2020-03-23,False
+Honduras,Central District,2020-03-16,2020-04-19,Municipality,https://covid19honduras.org/?q=toque-de-queda,2020-04-10,False
+Honduras,La Ceiba,2020-03-16,2020-04-19,Municipality,https://covid19honduras.org/?q=toque-de-queda,2020-04-10,False
+Honduras,Choluteca,2020-03-16,2020-04-19,Municipality,https://covid19honduras.org/?q=toque-de-queda,2020-04-10,False
+Honduras,San Pedro Sula,2020-03-17,2020-04-19,Municipality,https://covid19honduras.org/?q=honduras-tiene-9-casos-confirmados-de-coronavirus,2020-04-10,False
+Honduras,Rest of area,2020-03-20,2020-04-19,National,https://covid19honduras.org/?q=toque-de-queda-absoluto-para-todo-el-pais,2020-04-10,False
+Hungary,Hungary,2020-03-28,2020-04-10,National,https://www.reuters.com/article/us-health-coronavirus-hungary-restrictio/hungary-pm-imposes-lockdown-sees-coronavirus-peak-by-july-idUSKBN21E0Q2,2020-03-27,False
+India,India,2020-03-25,2020-04-30,National,https://www.indiatoday.in/india/story/novel-coronavirus-covid19-latest-news-update-india-lockdown-confirmed-positive-cases-deaths-uk-usa-italy-iran-china-1658922-2020-03-24,2020-03-24,False
+Indonesia,Jakarta,2020-04-10,2020-04-23,Province,,2020-04-14,False
+Indonesia,Tegal,2020-03-26,2020-07-31,City,https://jateng.suara.com/read/2020/03/26/142841/pertama-di-indonesia-walikota-umumkan-tegal-lockdown,2020-03-26,False
 Iraq,Iraq,2020-03-22,2020-04-11,National,https://www.thestar.com.my/news/regional/2020/03/22/iraq-on-total-lockdown-until-march-28-over-virus-fears,2020-03-30,False
-Ireland,Ireland,2020-03-12,2020-04-12,National,https://www.thesun.co.uk/news/11157853/what-time-irelands-coronavirus-lockdown-start/,2020-03-21,False
-Israel,Bnei Brak,2020-04-02,2020-04-15,City,https://www.timesofisrael.com/liveblog-april-2-2020/,2020-04-02,False
-Italy,Italy,2020-03-09,2020-04-13,National,https://www.wsj.com/articles/italy-bolsters-quarantine-checks-after-initial-lockdown-confusion-11583756737,2020-03-20,False
-Jordan,Jordan,2020-03-21,2020-04-12,National,https://www.cnn.com/2020/03/25/middleeast/jordan-lockdown-coronavirus-intl/index.html,,False
-Kuwait,Kuwait,2020-03-14,2020-03-29,National,https://www.algemeiner.com/2020/03/13/preparing-for-coronavirus-lockdown-kuwait-asks-muslims-to-pray-at-home/,2020-03-30,False
-Lebanon,Lebanon,2020-03-15,2020-03-29,National,https://www.france24.com/en/20200315-lebanon-announces-two-week-lockdown-over-coronavirus,2020-03-21,False
-Liberia,Margibi,2020-03-23,2020-04-14,County,https://www.liberianobserver.com/news/montserrado-margibi-lockdown-amid-covid-19-fears/,2020-03-30,False
-Liberia,Montserrado,2020-03-23,2020-04-14,County,https://www.liberianobserver.com/news/montserrado-margibi-lockdown-amid-covid-19-fears/,2020-03-30,False
-Libya,Libya,2020-03-22,2020-04-20,National,https://www.libyanexpress.com/libya-on-lockdown-from-6-00-pm-to-6-00-am-amid-coronavirus-preventive-measures/,2020-03-31,False
-Lithuania,Lithuania,2020-03-16,2020-04-13,National,https://www.15min.lt/naujiena/aktualu/lietuva/vyriausybeje-susauktas-pasitarimas-del-koronaviruso-skelbs-tolimesniu-veiksmu-plana-56-1289458,2020-03-24,False
-Madagascar,Antananarivo,2020-03-23,2020-04-12,City,https://www.news24.com/Africa/News/everyone-stay-at-home-madagascar-orders-lockdown-of-two-main-cities-in-virus-fight-20200323,2020-03-30,False
-Madagascar,Toamasina,2020-03-23,2020-04-12,City,https://www.news24.com/Africa/News/everyone-stay-at-home-madagascar-orders-lockdown-of-two-main-cities-in-virus-fight-20200323,2020-03-30,False
-Malaysia,Malaysia,2020-03-18,2020-04-14,National,https://www.nst.com.my/news/nation/2020/03/575177/covid-19-movement-control-order-imposed-only-essential-sectors-operating,2020-03-16,False
-Montenegro,Tuzi,2020-03-24,2020-04-14,Municipality,https://balkaninsight.com/2020/03/25/montenegro-places-first-town-under-total-quarantine/,2020-03-25,False
-Morocco,Morocco,2020-03-19,2020-04-20,National,https://www.h24info.ma/maroc/urgent-le-maroc-declare-letat-durgence-sanitaire/,2020-03-20,False
-Nepal,Nepal,2020-03-24,2020-04-07,National,https://www.thejakartapost.com/travel/2020/03/24/nepal-locks-down-for-a-week-to-stem-coronavirus-spread.html,2020-03-25,False
-Netherlands,Netherlands,2020-03-16,2020-04-28,National,https://nos.nl/nieuwsuur/artikel/2327187-de-uitzending-van-15-maart-verregaande-maatregelen-in-strijd-tegen-corona.html,2020-04-02,False
-New Zealand,New Zealand,2020-03-26,2020-04-19,National,https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12319204,2020-03-24,False
-Nigeria,Abuja,2020-03-30,2020-04-14,City,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
-Nigeria,Lagos,2020-03-30,2020-04-14,City,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
-Nigeria,Ogun,2020-03-30,2020-04-14,State,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
-Northern Cyprus,Northern Cyprus,2020-03-30,2020-04-03,National,https://www.hurriyet.com.tr/dunya/son-dakika-haberi-kktcde-sokaga-cikma-yasagi-karari-alindi-41482155,2020-04-01,False
-Norway,Norway,2020-03-12,2020-04-13,National,https://www.thelocal.no/20200324/norway-extends-coronavirus-lockdown-until-after-easter,2020-03-25,False
-Oman,Muttrah,2020-04-01,2020-04-18,District,https://www.msn.com/en-ae/news/other/covid-19-oman-puts-muttrah-province-in-lockdown/ar-BB121CMc,2020-04-03,False
-Pakistan,Azad Kashmir,2020-03-24,2020-04-14,Administrative,https://arynews.tv/en/azad-jammu-and-kashmir-pm-lockdown/,2020-03-25,False
-Pakistan,Balochistan,2020-03-24,2020-04-14,Province,https://tribune.com.pk/story/2183565/1-balochistan-goes-lockdown-untill-april-7/,2020-03-26,False
-Pakistan,Gilgit-Baltistan,2020-03-22,2020-04-14,Administrative,https://www.radio.gov.pk/22-03-2020/gb-govt-decides-to-observe-lockdown-for-indefinite-period,2020-03-25,False
-Pakistan,Punjab,2020-03-24,2020-04-14,Province,https://arynews.tv/en/cm-punjab-usman-buzdar-lockdown-punjab/,2020-03-25,False
-Pakistan,Sindh,2020-03-24,2020-04-14,Province,https://tribune.com.pk/story/2181138/1-sindh-govt-mulls-total-lockdown-provincial-covid-19-tally-crosses-350/,2020-03-25,False
-Panama,Panama,2020-03-25,2020-04-13,National,https://www.prensa.com/impresa/panorama/ejecutivo-decreta-cuarentena-total-de-manera-indefinida/,,False
-Papua New Guinea,Papua New Guinea,2020-03-24,2020-04-13,National,https://www.businessadvantagepng.com/png-in-lockdown-what-it-means-for-you-and-your-business/,2020-03-30,False
-Paraguay,Paraguay,2020-03-20,2020-04-12,National,https://www.nytimes.com/reuters/2020/03/20/world/americas/20reuters-health-coronavirus-paraguay.html,2020-03-30,False
-Peru,Peru,2020-03-16,2020-04-11,National,https://gestion.pe/peru/politica/coronavirus-en-peru-gobierno-anuncia-cuarentena-obligatorio-por-15-dias-por-coronavirus-noticia/,2020-03-27,False
-Philippines,Cebu,2020-03-27,2020-04-14,Province,https://www.cnnphilippines.com/regional/2020/3/26/Cebu-Province-enhanced-community-quarantine.html,2020-03-31,False
-Philippines,Davao Region,2020-03-19,2020-04-14,Region,https://www.rappler.com/nation/255097-davao-region-coronavirus-lockdown-begins,2020-03-25,False
-Philippines,Luzon,2020-03-15,2020-04-14,Island group,https://www.philstar.com/headlines/2020/03/12/2000209/travel-and-manila-suspended-march-15-code-red-sublevel-2-raised-over-covid-19?fbclid=IwAR3AAILu_dcJdaSsjyrRDkaPvgc-djCiwGBgTc_13DWyg8E05B3vsxz02PE,2020-03-12,False
-Philippines,Soccsksargen,2020-03-23,2020-04-14,Region,https://www.rappler.com/nation/255097-davao-region-coronavirus-lockdown-begins,2020-03-25,False
-Poland,Poland,2020-03-13,2020-04-12,National,https://www.thefirstnews.com/article/poland-in-covid-19-lockdown-pm-orders-bars-restaurants-shopping-centres-and-borders-closed---and-cancels-all-flights-11142,2020-03-21,False
-Portugal,Portugal,2020-03-19,2020-04-02,National,https://www.theportugalnews.com/news/state-of-emergency-explained/53448,2020-03-25,False
-Qatar,Doha Industrial Area,2020-03-11,2020-04-13,Industrial park,https://www.theguardian.com/global-development/2020/mar/20/covid-19-lockdown-turns-qatars-largest-migrant-camp-into-virtual-prison,2020-04-03,False
-Romania,Romania,2020-03-25,2020-04-14,National,https://www.digi24.ro/stiri/actualitate/klaus-iohannis-anunta-carantina-totala-in-romania-tot-ce-era-pana-acum-recomandare-devine-obligatoriu-masurile-in-vigoare-de-maine-1280363,2020-03-24,False
-Russia,Moscow,2020-03-30,2020-04-12,Metropolitan area,https://www.france24.com/en/20200330-moscow-goes-into-lockdown-urges-other-russian-regions-to-take-measures-to-curb-coronavirus-spread,2020-03-30,False
-Rwanda,Rwanda,2020-03-21,2020-04-12,National,https://www.dw.com/en/coronavirus-rwanda-imposes-africas-first-lockdown/a-52878787,2020-03-28,False
-Samoa,Samoa,2020-03-26,2020-04-09,National,https://www.rnz.co.nz/international/pacific-news/412647/samoa-officially-on-lock-down,2020-03-26,False
-Saudi Arabia,Jeddah,2020-03-29,2020-04-14,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
-Saudi Arabia,Mecca,2020-03-26,2020-04-14,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
-Saudi Arabia,Medina,2020-03-26,2020-04-14,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
-Saudi Arabia,Qatif,2020-03-09,2020-04-14,Area,https://www.aljazeera.com/news/2020/03/saudi-locks-qatif-coronavirus-surges-gulf-200308142809697.html,2020-03-30,False
-Saudi Arabia,Riyadh,2020-03-26,2020-04-14,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
-Singapore,Singapore,2020-04-07,2020-05-04,National,https://www.straitstimes.com/singapore/health/most-workplaces-to-close-schools-will-move-to-full-home-based-learning-from-next,2020-04-03,False
-South Africa,South Africa,2020-03-26,2020-04-16,National,https://www.theguardian.com/world/2020/mar/23/south-africa-to-go-into-21-day-lockdown-on-thursday-night,2020-03-24,False
-Spain,Spain,2020-03-14,2020-04-25,National,https://www.elmundo.es/espana/2020/03/13/5e6b844e21efa0dd258b45a5.html,2020-03-20,False
-Thailand,Thailand,2020-03-25,2020-04-30,National,https://theaseanpost.com/article/surviving-virus-lockdown,2020-04-04,False
-Tunisia,Tunisia,2020-03-22,2020-04-11,National,https://www.reuters.com/article/us-health-coronavirus-tunisia-army-idUSKBN21A2EH,2020-03-23,False
-United Arab Emirates,United Arab Emirates,2020-03-26,2020-03-30,National,https://www.garda.com/crisis24/news-alerts/326651/uae-three-day-lockdown-scheduled-march-26-29-update-16,2020-03-30,False
-United Kingdom,United Kingdom,2020-03-24,2020-04-13,National,https://www.bbc.com/news/uk-52014472,2020-03-24,False
-United States,California,2020-03-19,2020-03-29,State,https://www.wsj.com/articles/china-reports-no-new-domestic-coronavirus-infections-for-the-first-time-since-outbreak-started-11584611233,2020-03-20,False
-United States,"Clark County, NV",2020-03-20,2020-04-20,County,https://www.dailymail.co.uk/news/article-8129667/Las-Vegas-goes-dark-Iconic-strip-deserted-Sin-City-joins-list-barren-towns.html,2020-03-20,False
-United States,Connecticut,2020-03-23,2020-03-29,State,https://www.nbcconnecticut.com/news/coronavirus/coronavirus-outbreak-latest-updates/2242154/,2020-03-21,False
-United States,Illinois,2020-03-21,2020-04-07,State,https://www.chicagotribune.com/coronavirus/ct-coronavirus-illinois-shelter-in-place-lockdown-order-20200320-teedakbfw5gvdgmnaxlel54hau-story.html,2020-03-21,False
-United States,"Kansas City, KS",2020-03-24,2020-04-23,City,https://www.cjonline.com/news/20200321/kansas-coronavirus-update-30-day-quarantine-ordered-for-kc-state-records-second-death-55-cases,2020-03-24,False
-United States,Massachusetts,2020-03-24,2020-04-07,State,https://www.wbur.org/commonhealth/2020/03/23/baker-closes-businesses-coronavirus,2020-03-23,False
-United States,Michigan,2020-03-24,2020-04-14,State,https://www.clickondetroit.com/news/local/2020/03/23/watch-live-michigan-gov-whitmer-to-provide-update-on-states-covid-19-response-efforts/,2020-03-23,False
-United States,New York,2020-03-20,2020-03-29,State,https://edition.cnn.com/2020/03/20/politics/new-york-workforce-stay-home/index.html,2020-03-21,False
-United States,Oregon,2020-03-24,2020-04-14,State,https://www.oregonlive.com/business/2020/03/oregon-governor-issues-stay-at-home-order-to-enforce-coronavirus-restrictions.html,2020-03-23,False
-United States,Wisconsin,2020-03-24,2020-04-24,State,https://www.nbcchicago.com/news/coronavirus/wisconsin-governor-issues-order-closing-businesses/2243503/,2020-03-24,False
-Venezuela,Venezuela,2020-03-17,2020-04-19,National,https://www.reuters.com/article/us-health-coronavirus-venezuela-maduro/venezuelas-to-implement-nationwide-quarantine-as-coronavirus-cases-rise-to-33-idUSKBN214015,2020-03-24,False
-Zimbabwe,Zimbabwe,2020-03-30,2020-04-12,National,https://www.voanews.com/science-health/coronavirus-outbreak/zimbabwe-begins-lockdown-fight-covid19,2020-03-30,False
-China,Wuhan,2020-01-23,2020-04-08,City,https://www.backchina.com/news/2020/03/15/677206.html,,True
+Ireland,Ireland,2020-03-12,2020-05-05,National,https://www.thesun.co.uk/news/11157853/what-time-irelands-coronavirus-lockdown-start/,2020-03-21,False
+Israel,Bnei Brak,2020-04-02,2020-04-17,City,https://www.timesofisrael.com/liveblog-april-2-2020/,2020-04-02,False
+Italy,Italy,2020-03-09,2020-05-03,National,https://www.wsj.com/articles/italy-bolsters-quarantine-checks-after-initial-lockdown-confusion-11583756737,2020-03-20,False
+Japan,Chiba,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Fukuoka,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Hyōgo,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Kanagawa,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Osaka,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Saitama,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Japan,Tokyo,2020-04-07,2020-05-06,Prefecture,https://www.scmp.com/news/asia/east-asia/article/3078955/coronavirus-japans-major-cities-go-quiet-after-state-emergency,2020-04-08,False
+Jordan,Jordan,2020-03-21,2020-04-21,National,,2020-04-14,False
+Kuwait,Kuwait,2020-03-14,2020-03-29,National,,2020-04-14,False
+Lebanon,Lebanon,2020-03-15,2020-03-28,National,https://www.algemeiner.com/2020/03/13/preparing-for-coronavirus-lockdown-kuwait-asks-muslims-to-pray-at-home/,2020-03-30,False
+Liberia,Margibi,2020-03-23,2020-04-11,County,https://www.france24.com/en/20200315-lebanon-announces-two-week-lockdown-over-coronavirus,2020-03-21,False
+Liberia,Montserrado,2020-03-23,2020-04-11,County,https://www.liberianobserver.com/news/montserrado-margibi-lockdown-amid-covid-19-fears/,2020-03-30,False
+Libya,Libya,2020-03-22,2020-04-20,National,https://www.liberianobserver.com/news/montserrado-margibi-lockdown-amid-covid-19-fears/,2020-03-30,False
+Lithuania,Lithuania,2020-03-16,2020-04-27,National,https://www.libyanexpress.com/libya-on-lockdown-from-6-00-pm-to-6-00-am-amid-coronavirus-preventive-measures/,2020-03-31,False
+Luxembourg,Luxembourg,2020-03-18,2020-04-19,National,https://www.15min.lt/naujiena/aktualu/lietuva/vyriausybeje-susauktas-pasitarimas-del-koronaviruso-skelbs-tolimesniu-veiksmu-plana-56-1289458,2020-03-24,False
+Madagascar,Antananarivo,2020-03-23,2020-04-21,City,https://www.themayor.eu/en/shops-and-restaurants-in-luxembourg-city-wont-pay-rent-during-lockdown,2020-04-10,False
+Madagascar,Toamasina,2020-03-23,2020-04-21,City,https://www.news24.com/Africa/News/everyone-stay-at-home-madagascar-orders-lockdown-of-two-main-cities-in-virus-fight-20200323,2020-03-30,False
+Malaysia,Malaysia,2020-03-18,2020-04-28,National,https://www.news24.com/Africa/News/everyone-stay-at-home-madagascar-orders-lockdown-of-two-main-cities-in-virus-fight-20200323,2020-03-30,False
+Montenegro,Tuzi,2020-03-24,2020-04-19,Municipality,https://www.nst.com.my/news/nation/2020/03/575177/covid-19-movement-control-order-imposed-only-essential-sectors-operating,2020-03-16,False
+Morocco,Morocco,2020-03-19,2020-04-20,National,https://balkaninsight.com/2020/03/25/montenegro-places-first-town-under-total-quarantine/,2020-03-25,False
+Nepal,Nepal,2020-03-24,2020-04-15,National,https://www.h24info.ma/maroc/urgent-le-maroc-declare-letat-durgence-sanitaire/,2020-03-20,False
+Netherlands,Netherlands,2020-03-16,2020-04-28,National,https://www.thejakartapost.com/travel/2020/03/24/nepal-locks-down-for-a-week-to-stem-coronavirus-spread.html,2020-03-25,False
+New Zealand,New Zealand,2020-03-26,2020-04-20,National,https://nos.nl/nieuwsuur/artikel/2327187-de-uitzending-van-15-maart-verregaande-maatregelen-in-strijd-tegen-corona.html,2020-04-02,False
+Nigeria,Abuja,2020-03-30,2020-04-12,City,https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12319204,2020-03-24,False
+Nigeria,Lagos,2020-03-30,2020-04-12,City,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
+Nigeria,Ogun,2020-03-30,2020-04-12,State,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
+Northern Cyprus,Northern Cyprus,2020-03-30,2020-04-17,National,https://www.aljazeera.com/news/2020/03/nigeria-announces-lockdown-major-cities-curb-coronavirus-200330095100706.html,2020-03-30,False
+Norway,Norway,2020-03-12,2020-04-13,National,https://www.hurriyet.com.tr/dunya/son-dakika-haberi-kktcde-sokaga-cikma-yasagi-karari-alindi-41482155,2020-04-01,False
+Oman,Muscat,2020-04-10,2020-04-22,Region,https://www.thelocal.no/20200324/norway-extends-coronavirus-lockdown-until-after-easter,2020-03-25,False
+Pakistan,Azad Kashmir,2020-03-24,2020-04-14,Administrative,https://www.omanobserver.om/lockdown/,2020-04-08,False
+Pakistan,Punjab,2020-03-24,2020-04-14,Province,https://arynews.tv/en/azad-jammu-and-kashmir-pm-lockdown/,2020-03-25,False
+Pakistan,Sindh,2020-03-24,2020-04-14,Province,https://arynews.tv/en/cm-punjab-usman-buzdar-lockdown-punjab/,2020-03-25,False
+Pakistan,Balochistan,2020-03-24,2020-04-21,Province,https://tribune.com.pk/story/2181138/1-sindh-govt-mulls-total-lockdown-provincial-covid-19-tally-crosses-350/,2020-03-25,False
+Pakistan,Gilgit-Baltistan,2020-03-22,2020-04-21,Administrative,https://tribune.com.pk/story/2183565/1-balochistan-goes-lockdown-untill-april-7/,2020-03-26,False
+Panama,Panama,2020-03-25,2020-04-07,National,https://www.radio.gov.pk/22-03-2020/gb-govt-decides-to-observe-lockdown-for-indefinite-period,2020-03-25,False
+Papua New Guinea,Papua New Guinea,2020-03-24,2020-04-07,National,,2020-04-14,False
+Paraguay,Paraguay,2020-03-20,2020-04-12,National,https://www.businessadvantagepng.com/png-in-lockdown-what-it-means-for-you-and-your-business/,2020-03-30,False
+Peru,Peru,2020-03-16,2020-04-26,National,https://www.nytimes.com/reuters/2020/03/20/world/americas/20reuters-health-coronavirus-paraguay.html,2020-03-30,False
+Philippines,Cebu,2020-03-27,2020-04-30,Province,https://gestion.pe/peru/politica/coronavirus-en-peru-gobierno-anuncia-cuarentena-obligatorio-por-15-dias-por-coronavirus-noticia/,2020-03-27,False
+Philippines,Davao Region,2020-03-19,2020-04-30,Region,https://www.cnnphilippines.com/regional/2020/3/26/Cebu-Province-enhanced-community-quarantine.html,2020-03-31,False
+Philippines,Luzon,2020-03-15,2020-04-30,Island group,https://www.rappler.com/nation/255097-davao-region-coronavirus-lockdown-begins,2020-03-25,False
+Philippines,Soccsksargen,2020-03-23,2020-04-30,Region,https://www.philstar.com/headlines/2020/03/12/2000209/travel-and-manila-suspended-march-15-code-red-sublevel-2-raised-over-covid-19?fbclid=IwAR3AAILu_dcJdaSsjyrRDkaPvgc-djCiwGBgTc_13DWyg8E05B3vsxz02PE,2020-03-12,False
+Poland,Poland,2020-03-13,2020-04-11,National,https://www.rappler.com/nation/255097-davao-region-coronavirus-lockdown-begins,2020-03-25,False
+Portugal,Portugal,2020-03-19,2020-04-02,National,https://www.thefirstnews.com/article/poland-in-covid-19-lockdown-pm-orders-bars-restaurants-shopping-centres-and-borders-closed---and-cancels-all-flights-11142,2020-03-21,False
+Qatar,Doha Industrial Area,2020-03-11,2020-04-20,Industrial park,https://www.theportugalnews.com/news/state-of-emergency-explained/53448,2020-03-25,False
+Romania,Romania,2020-03-25,2020-05-12,National,https://www.theguardian.com/global-development/2020/mar/20/covid-19-lockdown-turns-qatars-largest-migrant-camp-into-virtual-prison,2020-04-03,False
+Russia,Moscow,2020-03-30,2020-05-01,Metropolitan area,https://www.digi24.ro/stiri/actualitate/klaus-iohannis-anunta-carantina-totala-in-romania-tot-ce-era-pana-acum-recomandare-devine-obligatoriu-masurile-in-vigoare-de-maine-1280363,2020-03-24,False
+Rwanda,Rwanda,2020-03-21,2020-04-19,National,https://www.france24.com/en/20200330-moscow-goes-into-lockdown-urges-other-russian-regions-to-take-measures-to-curb-coronavirus-spread,2020-03-30,False
+Samoa,Samoa,2020-03-26,2020-04-08,National,https://www.dw.com/en/coronavirus-rwanda-imposes-africas-first-lockdown/a-52878787,2020-03-28,False
+San Marino,San Marino,2020-03-14,2020-04-17,National,https://www.rnz.co.nz/international/pacific-news/412647/samoa-officially-on-lock-down,2020-03-26,False
+Saudi Arabia,Jeddah,2020-03-29,2020-04-21,City,,2020-04-14,False
+Saudi Arabia,Mecca,2020-03-26,2020-04-21,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
+Saudi Arabia,Medina,2020-03-26,2020-04-21,City,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
+Saudi Arabia,Qatif,2020-03-09,2020-04-21,Area,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
+Saudi Arabia,Riyadh,2020-03-26,2020-04-21,City,https://www.aljazeera.com/news/2020/03/saudi-locks-qatif-coronavirus-surges-gulf-200308142809697.html,2020-03-30,False
+Serbia,Serbia,2020-03-15,2020-04-20,National,https://www.thestar.com.my/news/regional/2020/03/29/saudi-arabia-puts-fourth-city-on-lockdown-over-coronavirus,2020-03-30,False
+Singapore,Singapore,2020-04-07,2020-05-04,National,https://www.dw.com/en/coronavirus-what-are-the-lockdown-measures-across-europe/a-52905137,2020-04-08,False
+South Africa,South Africa,2020-03-26,2020-04-15,National,https://www.straitstimes.com/singapore/health/most-workplaces-to-close-schools-will-move-to-full-home-based-learning-from-next,2020-04-03,False
+Spain,Spain,2020-03-14,2020-04-25,National,https://www.theguardian.com/world/2020/mar/23/south-africa-to-go-into-21-day-lockdown-on-thursday-night,2020-03-24,False
+Thailand,Thailand,2020-03-25,2020-04-30,National,https://www.elmundo.es/espana/2020/03/13/5e6b844e21efa0dd258b45a5.html,2020-03-20,False
+Tunisia,Tunisia,2020-03-22,2020-04-19,National,https://theaseanpost.com/article/surviving-virus-lockdown,2020-04-04,False
+Turkey,Turkey,2020-04-11,2020-04-13,National,https://www.reuters.com/article/us-health-coronavirus-tunisia-army-idUSKBN21A2EH,2020-03-23,False
+Ukraine,Ukraine,2020-03-17,2020-04-24,National,https://www.yahoo.com/news/turkey-imposes-48-hour-coronavirus-120902289.html,2020-04-13,False
+United Arab Emirates,United Arab Emirates,2020-03-26,2020-04-17,National,https://www.dw.com/en/coronavirus-what-are-the-lockdown-measures-across-europe/a-52905137,2020-04-08,False
+United Kingdom,United Kingdom,2020-03-24,,National,https://www.garda.com/crisis24/news-alerts/326651/uae-three-day-lockdown-scheduled-march-26-29-update-16,2020-03-30,False
+United States,California,2020-03-19,2020-04-22,State,https://www.bbc.com/news/uk-52014472,2020-03-24,False
+United States,"Clark County,NV",2020-03-20,2020-04-22,County,https://www.wsj.com/articles/china-reports-no-new-domestic-coronavirus-infections-for-the-first-time-since-outbreak-started-11584611233,2020-03-20,False
+United States,Connecticut,2020-03-23,2020-04-22,State,https://www.dailymail.co.uk/news/article-8129667/Las-Vegas-goes-dark-Iconic-strip-deserted-Sin-City-joins-list-barren-towns.html,2020-03-20,False
+United States,Illinois,2020-03-21,2020-04-07,State,https://www.nbcconnecticut.com/news/coronavirus/coronavirus-outbreak-latest-updates/2242154/,2020-03-21,False
+United States,"Kansas City,KS",2020-03-24,2020-04-19,City,https://www.chicagotribune.com/coronavirus/ct-coronavirus-illinois-shelter-in-place-lockdown-order-20200320-teedakbfw5gvdgmnaxlel54hau-story.html,2020-03-21,False
+United States,Massachusetts,2020-03-24,2020-04-07,State,https://www.cjonline.com/news/20200321/kansas-coronavirus-update-30-day-quarantine-ordered-for-kc-state-records-second-death-55-cases,2020-03-24,False
+United States,Michigan,2020-03-24,2020-04-13,State,https://www.wbur.org/commonhealth/2020/03/23/baker-closes-businesses-coronavirus,2020-03-23,False
+United States,New York,2020-03-20,2020-04-29,State,https://www.clickondetroit.com/news/local/2020/03/23/watch-live-michigan-gov-whitmer-to-provide-update-on-states-covid-19-response-efforts/,2020-03-23,False
+United States,Oregon,2020-03-24,2020-04-21,State,https://edition.cnn.com/2020/03/20/politics/new-york-workforce-stay-home/index.html,2020-03-21,False
+United States,Wisconsin,2020-03-24,2020-04-25,State,https://www.oregonlive.com/business/2020/03/oregon-governor-issues-stay-at-home-order-to-enforce-coronavirus-restrictions.html,2020-03-23,False
+Venezuela,Venezuela,2020-03-17,2020-04-20,National,https://www.nbcchicago.com/news/coronavirus/wisconsin-governor-issues-order-closing-businesses/2243503/,2020-03-24,False
+Zimbabwe,Zimbabwe,2020-03-30,2020-04-19,National,https://www.reuters.com/article/us-health-coronavirus-venezuela-maduro/venezuelas-to-implement-nationwide-quarantine-as-coronavirus-cases-rise-to-33-idUSKBN214015,2020-03-24,False
+,,,,,https://www.voanews.com/science-health/coronavirus-outbreak/zimbabwe-begins-lockdown-fight-covid19,2020-03-30,False
+China,Wuhan,2020-01-23,2020-04-08,City,,2020-04-14,True
 China,Xiaogan,2020-01-24,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
 China,Huanggang,2020-01-23,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
 China,Jingzhou,2020-01-24,2020-03-17,City,https://www.yicai.com/news/100550418.html,2020-03-16,True
@@ -119,6 +142,5 @@ China,Shiyan,2020-01-24,2020-03-25,City,https://www.theguardian.com/world/2020/m
 China,Xiantao,2020-01-24,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
 China,Tianmen,2020-01-24,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
 China,Enshi,2020-01-24,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
-China,Qianjiang,2020-01-24,2020-03-13,City,https://news.sina.cn/2020-03-13/detail-iimxxstf8849211.d.html?vt=4&pos=8&cid=56261,,True
+China,Qianjiang,2020-01-24,2020-03-13,City,,2020-04-14,True
 China,Shennongjia,2020-01-27,2020-03-25,City,https://www.theguardian.com/world/2020/mar/24/china-to-lift-travel-restrictions-in-hubei-after-months-of-coronavirus-lockdown,2020-03-24,True
-China,Jia County,2020-04-01,2020-04-08,City,https://www.nytimes.com/reuters/2020/04/01/world/asia/01reuters-health-coronavirus-china-county.html,2020-04-02,True
