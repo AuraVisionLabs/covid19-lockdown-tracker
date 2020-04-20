@@ -86,7 +86,7 @@ def pre_proc_df(df):
     df['Finish'] = pd.to_datetime(df['End date'], format='%Y-%m-%d')
 
     df_china_us = df[df['Country'].isin(['United States', 'China'])]
-    df_other = df[~df['Country'].isin(['United States', 'China'])]
+    df_other = df[~df['Country'].isin(['United States', 'China'])].sort_values(['Finish'], ascending=False)
     df_other = df_other.groupby('Country').agg(
         {'Start': 'min', 'Finish': 'max', 'Place': lambda x: (str(len(x)) + ' places' if len(x) > 1 else x), 'Level': 'first', 'Confirmed': 'first', 'update': 'first', 'url': 'first'}).reset_index()
     # print(df_other)
