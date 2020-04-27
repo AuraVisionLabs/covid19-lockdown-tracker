@@ -67,14 +67,12 @@ def process_rows(page, rows, num_rows, num_cols):
     data = pd.DataFrame(np.ones((num_rows+1, num_cols))*np.nan)
     reprows = 0
     for i, row in enumerate(rows):
-        got_sup = 0
+        got_sup = False
+
         try:
             col_stat = data.iloc[i,:][data.iloc[i,:].isnull()].index[0]
         except IndexError:
             print(i, row)
-
-        # dates += ['05 March 2020']
-        # links += ['b']
 
         for j, cell in enumerate(row.find_all(['td', 'th'])):
             rep_row, rep_col = get_spans(cell)
@@ -93,8 +91,7 @@ def process_rows(page, rows, num_rows, num_cols):
                             date = date_elem.text[12:] if date_elem is not None else None
                     dates += [date] * rep_row
                     links += [link] * rep_row
-                    reprows += rep_row
-                    got_sup += 1
+                    got_sup = True
 
             for sup in cell.findAll('sup'):
                 sup.decompose()
@@ -109,8 +106,6 @@ def process_rows(page, rows, num_rows, num_cols):
             data.iloc[i:i+rep_row,col_stat:col_stat+rep_col] = cell.get_text(strip=True)
             if col_stat<data.shape[1]-1:
                 col_stat+=rep_col
-
-    print(num_rows, reprows)
 
     return data, links, dates
 

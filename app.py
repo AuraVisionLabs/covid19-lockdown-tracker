@@ -21,57 +21,61 @@ df_arewe = pd.DataFrame([{
 } for r in js_arewe])
 df_arewe_ls = df_arewe[df_arewe['Lockdown'] | df_arewe['Shops']]
 
-wiki_inter_req = requests.get("https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic")
-wiki_inter_soup = BeautifulSoup(wiki_inter_req.content, "html.parser")
-wiki_inter_table = wiki_inter_soup.find("span", string="Coronavirus quarantines across the World").find_parent('table')
-# wiki_inter_table.find_all("a", string="Blida").find_parent("tr").decompose()
-wiki_inter_table.findAll('tr')[0].decompose()
-wiki_inter_table.findAll('tr')[0].decompose()
-wiki_inter_table.findAll('tr')[-1].decompose()
-
-wiki_china_req = requests.get("https://en.wikipedia.org/wiki/2020_Hubei_lockdowns")
-wiki_china_soup = BeautifulSoup(wiki_china_req.content, "html.parser")
-wiki_china_table = wiki_china_soup.find("span", string="Cities under quarantine in China").find_parent('table')
-wiki_china_table.find_all("th", text=re.compile('^Quarantine total$'))[0].find_parent('tr').decompose()
-wiki_china_table.findAll('tr')[0].decompose()
-wiki_china_table.findAll('tr')[0].decompose()
-wiki_china_table.findAll('tr')[0].decompose()
-wiki_china_table.findAll('tr')[-1].decompose()
-
-df_wiki_inter, wiki_inter_links, wiki_inter_dates = get_table(wiki_inter_table, wiki_inter_soup)
-df_wiki_china, wiki_china_links, wiki_china_dates = get_table(wiki_china_table, wiki_china_soup)
-
-print('wiki international', len(df_wiki_inter), len(wiki_inter_links))
-# print(df_wiki_inter)
-df_wiki_inter.columns = ['Country', 'Place', 'Start date', 'End date', 'Level']
-df_wiki_inter['url'] = wiki_inter_links
-df_wiki_inter['update'] = pd.to_datetime(wiki_inter_dates, format='%d %B %Y')
-df_wiki_inter['Confirmed'] = False
-# print(df_wiki_inter)
-
-df_wiki_china = pd.read_html(str(wiki_china_table), header=None)[0]
-print('wiki china', len(df_wiki_china), len(wiki_china_links))
-# print(df_wiki_china)
-df_wiki_china = df_wiki_china[[0,2,3]]
-df_wiki_china.columns = ['Place', 'Start date', 'End date']
-df_wiki_china['url'] = wiki_china_links
-df_wiki_china['update'] = pd.to_datetime(wiki_china_dates, format='%d %B %Y')
-df_wiki_china['Country'] = 'China'
-df_wiki_china['Level'] = 'City'
-df_wiki_china['Confirmed'] = True
-
-df_wiki = pd.concat((df_wiki_inter, df_wiki_china), sort=False)
-df_wiki.to_csv('wiki_lockdown_dates.csv', index=False)
+# wiki_inter_req = requests.get("https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic")
+# wiki_inter_soup = BeautifulSoup(wiki_inter_req.content, "html.parser")
+# wiki_inter_table = wiki_inter_soup.find("span", string="2020 coronavirus pandemic lockdowns").find_parent('table')
+# # wiki_inter_table.find_all("a", string="Blida").find_parent("tr").decompose()
+# wiki_inter_table.findAll('tr')[0].decompose()
+# wiki_inter_table.findAll('tr')[0].decompose()
+# wiki_inter_table.findAll('tr')[-1].decompose()
+#
+# wiki_china_req = requests.get("https://en.wikipedia.org/wiki/2020_Hubei_lockdowns")
+# wiki_china_soup = BeautifulSoup(wiki_china_req.content, "html.parser")
+# wiki_china_table = wiki_china_soup.find("span", string="Cities under quarantine in China").find_parent('table')
+# wiki_china_table.find_all("th", text=re.compile('^Quarantine total$'))[0].find_parent('tr').decompose()
+# wiki_china_table.findAll('tr')[0].decompose()
+# wiki_china_table.findAll('tr')[0].decompose()
+# wiki_china_table.findAll('tr')[0].decompose()
+# wiki_china_table.findAll('tr')[-1].decompose()
+#
+# df_wiki_inter, wiki_inter_links, wiki_inter_dates = get_table(wiki_inter_table, wiki_inter_soup)
+# df_wiki_china, wiki_china_links, wiki_china_dates = get_table(wiki_china_table, wiki_china_soup)
+#
+# print('wiki international', len(df_wiki_inter), len(wiki_inter_links))
+# # print(df_wiki_inter)
+# df_wiki_inter.columns = ['Country', 'Place', 'Start date', 'End date', 'Level']
+# df_wiki_inter['url'] = wiki_inter_links
+# df_wiki_inter['update'] = pd.to_datetime(wiki_inter_dates, format='%d %B %Y')
+# df_wiki_inter['Confirmed'] = False
+# df_wiki_inter['Country'] = df_wiki_inter['Country'].str.replace(r'\([^)]*\)', '')
+# # print(df_wiki_inter)
+#
+# df_wiki_china = pd.read_html(str(wiki_china_table), header=None)[0]
+# print('wiki china', len(df_wiki_china), len(wiki_china_links))
+# # print(df_wiki_china)
+# df_wiki_china = df_wiki_china[[0,2,3]]
+# df_wiki_china.columns = ['Place', 'Start date', 'End date']
+# df_wiki_china['url'] = wiki_china_links
+# df_wiki_china['update'] = pd.to_datetime(wiki_china_dates, format='%d %B %Y')
+# df_wiki_china['Country'] = 'China'
+# df_wiki_china['Level'] = 'City'
+# df_wiki_china['Confirmed'] = True
+#
+# df_wiki = pd.concat((df_wiki_inter, df_wiki_china), sort=False)
+# df_wiki.to_csv('wiki_lockdown_dates.csv', index=False)
 
 df_aura = pd.read_csv('aura_lockdown_dates.csv')
 df_aura['update'] = pd.to_datetime(df_aura['update'], format='%Y-%m-%d')
 
-df_quar = pd.concat((df_wiki_inter, df_wiki_china, df_aura), sort=False)
+df_old_csv = pd.read_csv('history/lockdown_dates_%s.csv' % ((pd.datetime.now() - pd.offsets.Day(1)).strftime('%d-%m-%y')))
+df_old_csv['update'] = pd.to_datetime(df_old_csv['update'], format='%Y-%m-%d')
+
+df_quar = pd.concat((df_old_csv, df_aura), sort=False)
 df_quar['update'] = df_quar['update'].fillna(pd.Timestamp('2000/11/12 13:35'))
+df_quar.loc[df_quar['Place'] == df_quar['Country'], 'Place'] = np.nan
 df_quar = df_quar.sort_values('update')
 df_quar = df_quar.drop_duplicates(['Country', 'Place'], keep='last')
 df_quar = df_quar.dropna(subset=['Start date'])
-df_quar.loc[df_quar['Place'] == df_quar['Country'], 'Place'] = np.nan
 
 print('not in arewe')
 print(set(df_quar['Country']) - set(df_arewe_ls['Country']))
@@ -82,8 +86,9 @@ df_quar.to_csv('deploy/lockdown_dates.csv', index=False)
 df_quar.to_csv('history/lockdown_dates_%s.csv' % (pd.datetime.now().strftime('%d-%m-%y')), index=False)
 
 def pre_proc_df(df):
-    df['Start'] = pd.to_datetime(df['Start date'], format='%Y-%m-%d')
-    df['Finish'] = pd.to_datetime(df['End date'], format='%Y-%m-%d')
+    df['Start'] = pd.to_datetime(df['Start date'], format='%Y-%m-%d', errors='coerce')
+    df['Finish'] = pd.to_datetime(df['End date'], format='%Y-%m-%d', errors='coerce')
+    df = df.dropna(subset=['Start', 'Finish'])
 
     df_china_us = df[df['Country'].isin(['United States', 'China'])]
     df_other = df[~df['Country'].isin(['United States', 'China'])].sort_values(['Finish'], ascending=False)
@@ -106,7 +111,9 @@ def pre_proc_df(df):
     return df
 
 df_quar = pre_proc_df(df_quar)
+print(df_quar)
 df_old = pre_proc_df(pd.read_csv('history/lockdown_dates_%s.csv' % ((pd.datetime.now() - pd.offsets.Day(1)).strftime('%d-%m-%y'))))
+print(df_old)
 
 for index, row in df_quar.iterrows():
     if row['Finish'] >= pd.datetime.now().date() and row['Confirmed']:
@@ -124,7 +131,7 @@ for index, row in df_quar.iterrows():
             continue
     else:
         old_row = old_row.iloc[0]
-        print(old_row)
+        # print(old_row)
         if pd.isnull(old_row['Finish']) and not pd.isnull(row['Finish']):
             df_quar.at[index, 'update_status'] = '⏰ Review date added'
             continue
@@ -132,7 +139,7 @@ for index, row in df_quar.iterrows():
         if old_row['Finish'] < row['Finish']:
             df_quar.at[index, 'update_status'] = '⏰ Review date updated'
             continue
-print(df_quar)
+
 average_confirmed_days = df_quar[df_quar['Confirmed'] == True]['Duration'].mean().days
 average_review_days = df_quar[df_quar['Confirmed'] == False]['Duration'].mean().days
 max_confirmed_days = df_quar[df_quar['Confirmed']  == True]['Duration'].max().days
@@ -156,20 +163,19 @@ line_height = -30
 info_height = 0
 offset_height = -100
 
-print(x_text, no_end)
+# print(x_text, no_end)
 
 
-def time_fmt(row, date, text):
+def time_fmt(row, date, text, duration):
     dtt = (date - pd.datetime.now()).days + 1
-    duration = (date - row['Start']).days
     if dtt == 0:
         day_str = 'Today'
     else:
         day_str = ('1 Day' if dtt * dtt == 1 else str(abs(dtt)) + ' Days')
         day_str = day_str + ' ago' if dtt < 0 else day_str + ' from now'
-    update_str = '<br>Last updated on ' + row['update'].strftime('%d %b') if not pd.isna(row['update']) else ''
-    return '%s %s - %s<br>%s - %s (%s)<br>Duration from start - %s Days%s' % (
-        row['CCE'], row['Name'], row['Level'], text, day_str, date.strftime('%d %b'), duration, update_str)
+    update_str = '<br>Latest update - ' + row['update'].strftime('%d %b') if not pd.isna(row['update']) else ''
+    return '%s %s - %s<br>%s - %s (%s)<br>Duration - %s Days%s' % (
+        row['CCE'], row['Name'], row['Level'], date.strftime('%d %b'), text, day_str, duration, update_str)
 
 
 fig2 = go.Figure(
@@ -267,9 +273,9 @@ fig2 = go.Figure(
                  },
                  text=[
                      time_fmt(row, row['Start'] + pd.offsets.Day(average_confirmed_days),
-                              'Average duration would end'),
+                              'Average duration would end', average_confirmed_days),
                      time_fmt(row, row['Start'] + pd.offsets.Day(max_confirmed_days),
-                              'Maximum duration would end')
+                              'Maximum duration would end', max_confirmed_days)
                  ],
                  hoverinfo='text',
                  hoverlabel={
@@ -307,7 +313,7 @@ fig2 = go.Figure(
                  },
                  text=time_fmt(row, row['Finish'],
                                ('Lockdown ended' if row['Finish'] <= pd.datetime.now() else 'Lockdown end confirmed') if
-                               row['Confirmed'] else 'Lockdown review'),
+                               row['Confirmed'] else 'Lockdown review', row['Duration'].days),
                  hoverinfo='text',
                  hoverlabel={
                      'bgcolor': 'white',
@@ -328,7 +334,7 @@ fig2 = go.Figure(
                      'size': 10,
                      'color': x_color[0],
                  },
-                 text=time_fmt(row, row['Start'], 'Lockdown started'),
+                 text=time_fmt(row, row['Start'], 'Lockdown started', row['Duration'].days),
                  hoverinfo='text',
                  hoverlabel={
                      'bgcolor': 'white',
