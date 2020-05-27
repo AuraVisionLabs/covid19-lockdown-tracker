@@ -64,7 +64,9 @@ df_arewe_ls = df_arewe[df_arewe['Lockdown'] | df_arewe['Shops']]
 # df_wiki = pd.concat((df_wiki_inter, df_wiki_china), sort=False)
 # df_wiki.to_csv('wiki_lockdown_dates.csv', index=False)
 
-df_aura = pd.read_csv('aura_lockdown_dates.csv')
+df_aura = pd.read_csv('aura_lockdown_dates_sorted.csv')
+df_aura.sort_values(['Country', 'Place']).to_csv('aura_lockdown_dates_sorted.csv', index=False)
+
 df_aura['update'] = pd.to_datetime(df_aura['update'], format='%Y-%m-%d')
 
 df_old_csv = pd.read_csv('history/lockdown_dates_%s.csv' % ((pd.datetime.now() - pd.offsets.Day(1)).strftime('%d-%m-%y')))
@@ -117,7 +119,7 @@ print(df_old)
 
 for index, row in df_quar.iterrows():
     if row['Finish'] >= pd.datetime.now().date() and row['Confirmed']:
-        df_quar.at[index, 'update_status'] = '✅ End confirmed'
+        df_quar.at[index, 'update_status'] = '✅ Stores reopening'
         continue
 
     if not row['Country'] in df_old['Country'].unique():
@@ -155,7 +157,7 @@ x_text = ['<b>Lockdowns started</b><br>%d in %d Countries<br>%d Days ago️<br>o
                                                                                                 'Country'].nunique(),
                                                                                             average_into_lockdown_days),
           '<b>Lockdown reviews</b><br>%d Days from now<br>on average' % (average_review_days),
-          '<b>Lockdowns ended</b><br>%d in %d Countries<br>so far' % (total_finished, total_finished_country),
+          '<b>Non-essential retail opening</b><br>%d in %d Countries<br>so far' % (total_finished, total_finished_country),
           '<b>Average duration</b><br>%d Days confirmed<br>so far' % (average_confirmed_days),
           '<b>Maximum duration</b><br>%d Days confirmed<br>so far' % (max_confirmed_days)]
 x_color = ['rgb(255,0,90)', 'rgb(255,165,0)', 'rgb(0,255,165)', 'rgb(223,223,223)', 'rgb(180,180,180)']
@@ -166,14 +168,17 @@ offset_height = -100
 # print(x_text, no_end)
 
 
-def time_fmt(row, date, text, duration):
+def time_fmt(row, date, text, duration, update=None):
     dtt = (date - pd.datetime.now()).days + 1
     if dtt == 0:
         day_str = 'Today'
     else:
         day_str = ('1 Day' if dtt * dtt == 1 else str(abs(dtt)) + ' Days')
         day_str = day_str + ' ago' if dtt < 0 else day_str + ' from now'
-    update_str = '<br>Latest update - ' + row['update'].strftime('%d %b') if not pd.isna(row['update']) else ''
+    if update is None:
+        update_str = ''
+    else:
+        update_str = '<br>Latest update - ' + row['update'].strftime('%d %b') if not pd.isna(update) else ''
     return '%s %s - %s<br>%s - %s (%s)<br>Duration - %s Days%s' % (
         row['CCE'], row['Name'], row['Level'], date.strftime('%d %b'), text, day_str, duration, update_str)
 
@@ -312,8 +317,8 @@ fig2 = go.Figure(
                      'color': x_color[2] if row['Confirmed'] else x_color[1],
                  },
                  text=time_fmt(row, row['Finish'],
-                               ('Lockdown ended' if row['Finish'] <= pd.datetime.now() else 'Lockdown end confirmed') if
-                               row['Confirmed'] else 'Lockdown review', row['Duration'].days),
+                               ('Non-essential retail opening' if row['Finish'] <= pd.datetime.now() else 'Non-essential retail opening') if
+                               row['Confirmed'] else 'Lockdown review', row['Duration'].days, row['update']),
                  hoverinfo='text',
                  hoverlabel={
                      'bgcolor': 'white',
@@ -334,7 +339,7 @@ fig2 = go.Figure(
                      'size': 10,
                      'color': x_color[0],
                  },
-                 text=time_fmt(row, row['Start'], 'Lockdown started', row['Duration'].days),
+                 text=time_fmt(row, row['Start'], 'Lockdown started', row['Duration'].days, row['update']),
                  hoverinfo='text',
                  hoverlabel={
                      'bgcolor': 'white',
@@ -376,7 +381,7 @@ fig2 = go.Figure(
                                'yanchor': 'top',
                                'align': 'left',
                                'text': '<b>Last updated ' + pd.datetime.now().strftime(
-                                   '%d %B %Y') + '</b><br>The most comprehensive source for how past and current lockdowns are unfolding, updated daily.<br>Lockdowns dates reflect when non-essential retail has been ordered to close by local government.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>. Please share if you find this useful.',
+                                   '%d %B %Y') + '</b><br>The most comprehensive source for how past and current lockdowns are unfolding.<br>Lockdowns dates reflect full or partial closure of non-essential retail, ordered by local government.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>. Please share if you find this useful.',
                            },
                            {
                                'x': 0, 'y': 0, 'xref': 'paper', 'yref': 'paper',
@@ -418,7 +423,7 @@ fig2 = go.Figure(
                     ' <span style="font-size: 18px">' + row['CCE'] + '  </span><a href="' + row['url'] + '">🔗</a> ' +
                     row['Start'].strftime('%d %b') + '  '
         } for index, row in df_quar.iterrows()] + [{
-            'x': row['Finish'] if 'End' in row['update_status'] else row['Start'] + pd.offsets.Day(max_confirmed_days),
+            'x': row['Finish'] if row['Confirmed'] else row['Start'] + pd.offsets.Day(max_confirmed_days),
             'y': index * line_height + offset_height,
             'xref': 'x2',
             'yref': 'y2',
