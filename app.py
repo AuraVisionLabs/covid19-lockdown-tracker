@@ -380,8 +380,7 @@ fig2 = go.Figure(
                                'xanchor': 'left',
                                'yanchor': 'top',
                                'align': 'left',
-                               'text': '<b>Last updated ' + pd.datetime.now().strftime(
-                                   '%d %B %Y') + '</b><br>The most comprehensive source for how past and current lockdowns are unfolding.<br>Lockdowns dates reflect full or partial closure of non-essential retail, ordered by local government.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>. Please share if you find this useful.',
+                               'text': 'The most comprehensive source for how past and current lockdowns are unfolding.<br>Lockdowns dates reflect full or partial closure of non-essential retail, ordered by local government.<br>Interactive version and data download <a href="https://auravision.ai/covid19-lockdown-tracker">https://auravision.ai/covid19-lockdown-tracker</a>. Please share if you find this useful.',
                            },
                            {
                                'x': 0, 'y': 0, 'xref': 'paper', 'yref': 'paper',
@@ -393,7 +392,7 @@ fig2 = go.Figure(
                                'xanchor': 'left',
                                'yanchor': 'bottom',
                                'align': 'left',
-                               'text': 'Major data sources include:<br><a href="https://areweinlockdown.com/all_countries.html">Are we in Lockdown?</a><br><a href="https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic#In_other_countries">Wikipedia - National responses to the_pandemic</a>,<br><a href="https://www.businessinsider.com/countries-on-lockdown-coronavirus-italy-2020-3?r=US&IR=T">Business Insider - Countries on Lockdown</a><br><a href="https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html">CNN - Which US States have stay-at-home order</a>.<br><b>Aura Vision is a provider of in-store retail analytics.<br>For more information please visit <a href="https://auravision.ai">https://auravision.ai</a></b>.'
+                               'text': 'Major data sources include:<br><a href="https://www.nytimes.com/interactive/2020/us/states-reopen-map-coronavirus.html">NY Times - States Reopen Map</a><br><a href="https://en.wikipedia.org/wiki/National_responses_to_the_2019%E2%80%9320_coronavirus_pandemic#In_other_countries">Wikipedia - National responses to the_pandemic</a>,<br><a href="https://www.businessinsider.com/countries-on-lockdown-coronavirus-italy-2020-3?r=US&IR=T">Business Insider - Countries on Lockdown</a><br><a href="https://edition.cnn.com/2020/03/23/us/coronavirus-which-states-stay-at-home-order-trnd/index.html">CNN - Which US States have stay-at-home order</a>.<br><b>Aura Vision is a provider of in-store retail analytics.<br>For more information please visit <a href="https://auravision.ai">https://auravision.ai</a></b>.'
                            }
                        ] + [
                            {
@@ -403,16 +402,6 @@ fig2 = go.Figure(
                                'xanchor': 'center',
                                'text': text
                            } for x, text, color in zip(x_points, x_text, x_color)
-                       ] + [
-                           {
-                               'x': pd.datetime.now().date(), 'y': -40, 'xref': 'x2', 'yref': 'y2',
-                               'showarrow': False,
-                               'arrowwidth': 2,
-                               'font': {'size': 24},
-                               'xanchor': 'right',
-                               'yanchor': 'middle',
-                               'text': 'Latest update '
-                           }
                        ] + [{
             'x': pd.Timestamp(year=2019, month=12, day=14) if row['Country'] == 'China' else pd.Timestamp(year=2020, month=2, day=1), 'y': index * line_height + offset_height + 5, 'xref': 'x2', 'yref': 'y2',
             'showarrow': False,
