@@ -152,14 +152,13 @@ total_finished = len(df_quar[(df_quar['Confirmed'] == True) & (df_quar['Complete
 no_end = df_quar['Finish'].isna().sum()
 
 x_points = [0, 1, 2, 3, 4]
-x_text = ['<b>Lockdowns started</b><br>%d in %d Countries<br>%d Days ago️<br>on average' % (len(df_quar),
+x_text = ['<b>Lockdowns started</b><br>%d in %d Countries' % (len(df_quar),
                                                                                             df_quar[
-                                                                                                'Country'].nunique(),
-                                                                                            average_into_lockdown_days),
-          '<b>Lockdown reviews</b><br>%d Days from now<br>on average' % (average_review_days),
-          '<b>Non-essential retail opening</b><br>%d in %d Countries<br>so far' % (total_finished, total_finished_country),
-          '<b>Average duration</b><br>%d Days confirmed<br>so far' % (average_confirmed_days),
-          '<b>Maximum duration</b><br>%d Days confirmed<br>so far' % (max_confirmed_days)]
+                                                                                                'Country'].nunique()),
+          '<b>Lockdown reviews</b>',
+          '<b>Non-essential retail opening</b><br>%d in %d Countries' % (total_finished, total_finished_country),
+          '<b>Average duration</b><br>%d Days confirmed' % (average_confirmed_days),
+          '<b>Maximum duration</b><br>%d Days confirmed' % (max_confirmed_days)]
 x_color = ['rgb(255,0,90)', 'rgb(255,165,0)', 'rgb(0,255,165)', 'rgb(223,223,223)', 'rgb(180,180,180)']
 line_height = -30
 info_height = 0
@@ -240,59 +239,6 @@ fig2 = go.Figure(
                  xaxis='x1',
                  yaxis='y1'
              )
-         ] + [
-             go.Scatter(
-                 x=[pd.datetime.now().date(), pd.datetime.now().date()],
-                 y=[0, len(df_quar) * line_height + offset_height],
-                 mode='lines',
-                 line={
-                     'width': 2,
-                     'color': 'rgb(210,210,210)'
-                 },
-                 hoverinfo='none',
-                 xaxis='x2',
-                 yaxis='y2'
-             )
-         ] + [
-             go.Scatter(
-                 x=[row['Start'], row['Start'] + pd.offsets.Day(max_confirmed_days)],
-                 y=[index * line_height + offset_height, index * line_height + offset_height],
-                 mode='lines',
-                 line={
-                     'width': 3,
-                     'color': x_color[3]
-                 },
-                 hoverinfo='none',
-                 xaxis='x2',
-                 yaxis='y2'
-             ) for index, row in df_quar[df_quar['Confirmed'] == False].iterrows()
-         ] + [
-             go.Scatter(
-                 x=[row['Start'] + pd.offsets.Day(average_confirmed_days),
-                    row['Start'] + pd.offsets.Day(max_confirmed_days)],
-                 y=[index * line_height + offset_height, index * line_height + offset_height],
-                 mode='markers',
-                 marker={
-                     'size': 10,
-                     'color': [x_color[3], x_color[4]]
-                 },
-                 text=[
-                     time_fmt(row, row['Start'] + pd.offsets.Day(average_confirmed_days),
-                              'Average duration would end', average_confirmed_days),
-                     time_fmt(row, row['Start'] + pd.offsets.Day(max_confirmed_days),
-                              'Maximum duration would end', max_confirmed_days)
-                 ],
-                 hoverinfo='text',
-                 hoverlabel={
-                     'bgcolor': 'white',
-                     'bordercolor': [x_color[3], x_color[4]],
-                     'font': {
-                         'color': 'black'
-                     }
-                 },
-                 xaxis='x2',
-                 yaxis='y2'
-             ) for index, row in df_quar[df_quar['Confirmed'] == False].iterrows()
          ] + [
              go.Scatter(
                  x=[row['Start'], row['Finish']],
@@ -411,17 +357,7 @@ fig2 = go.Figure(
             'text': ('<b>' + row['Name'] + '</b>' if row['Level'] == 'National' else row['Name']) +
                     ' <span style="font-size: 18px">' + row['CCE'] + '  </span><a href="' + row['url'] + '">🔗</a> ' +
                     row['Start'].strftime('%d %b') + '  '
-        } for index, row in df_quar.iterrows()] + [{
-            'x': row['Finish'] if row['Confirmed'] else row['Start'] + pd.offsets.Day(max_confirmed_days),
-            'y': index * line_height + offset_height,
-            'xref': 'x2',
-            'yref': 'y2',
-            'showarrow': False,
-            'font': {'size': 14},
-            'xanchor': 'left',
-            'yanchor': 'middle',
-            'text': '  ' + row['update_status']
-        } for index, row in df_quar.dropna(subset=['update_status']).iterrows()],
+        } for index, row in df_quar.iterrows()],
         'xaxis': {
             'visible': False,
             'range': [-1, 5],
